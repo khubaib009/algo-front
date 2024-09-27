@@ -904,7 +904,7 @@ mission to redefine the future of finance.
                         width: "45%",
                         border: "3px solid  white",
                       }}
-                      src="wp-content/img/badri.jpeg"
+                      src="wp-content/img/Badri.jpeg"
                       className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
