@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkalgo_website=self.webpackChunkalgo_website||[]).push([[113],{9113:(e,t,s)=>{s.r(t),s.d(t,{default:()=>n});s(5043);var a=s(253),l=s(4783),o=s(6308),r=(s(5938),s(579));const n=()=>(0,r.jsxs)("div",{"data-elementor-type":"wp-post","data-elementor-id":"30",className:"elementor elementor-30","data-elementor-post-type":"envato_tk_templates",children:[(0,r.jsx)(a.A,{style:{backgroundColor:"red"}}),(0,r.jsx)(o.A,{}),(0,r.jsx)(l.A,{})]})}}]);
+//# sourceMappingURL=113.e781885c.chunk.js.map

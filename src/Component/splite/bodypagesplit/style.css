@@ -1,0 +1,56 @@
+.animated {
+    /* padding: 64px; */
+    background: linear-gradient(to right, hsl(178, 86%, 61%) 0, hsl(100, 72%, 54%) 10%, hsl(0, 0%, 100%) 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 7s infinite linear;
+  }
+  @keyframes shine {
+    0% {
+      background-position: 0;
+    }
+    60% {
+      background-position:500px;
+    }
+    100% {
+      background-position: 1000px;
+    }
+}
+/* h2{
+    color: hsl(0, 0%, 28%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 7px;
+    cursor: pointer;
+  }
+  
+  h2 span {
+    transition: 0.5s ease-out;
+  }
+  h2:hover span:nth-child(1) {
+    margin-right: 5px;
+  }
+  h2:hover span:nth-child(1):after {
+    content: "";
+  }
+  h2:hover span:nth-child(2) {
+    margin-left: 30px;
+  }
+  h2:hover span {
+    color: #0f2d06;
+    text-shadow: 0 0 10px #d3ea78, 0 0 20px #fff, 0 0 40px #fff;
+  } */
+/* 
+  --margin-block-start: 0em; */
+
+
+  @media only screen and (min-width: 1500px) {
+    /* Your styles for screens larger than 1700px go here */
+    .elementor-102 .elementor-element.elementor-element-4528a2b3 {
+      --margin-block-start: 0em !important;
+    }
+  }
+
+
+  
