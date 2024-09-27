@@ -8,7 +8,7 @@ const Footer = () => {
   const isMobile = window.innerWidth < 600;
 
   return (
-    <div data-elementor-type="footer" data-elementor-id={19} className="elementor elementor-19 elementor-location-footer" data-elementor-post-type="elementor_library" style={{ marginTop: isMobile ? '10%' : '0%' }}>
+    <div data-elementor-type="footer" data-elementor-id={19} className="elementor elementor-19 elementor-location-footer" data-elementor-post-type="elementor_library" style={{ marginTop: isMobile ? '0%' : '2%' }}>
       <div className="elementor-element elementor-element-642a5c01 e-flex e-con-boxed e-con e-parent" >
         <div className="e-con-inner">
           <div className="elementor-element elementor-element-e6cec1f e-flex e-con-boxed e-con e-child" >

@@ -69,6 +69,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -154,6 +155,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -220,6 +222,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -299,6 +302,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -369,6 +373,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -678,6 +683,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -742,6 +748,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -823,6 +830,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -891,6 +899,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -958,6 +967,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -1025,6 +1035,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -1147,6 +1158,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px",
                 marginBottom: isMobile ? "3%" : "",
               }}
             >
@@ -1215,6 +1227,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -1307,6 +1320,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -1366,6 +1380,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
