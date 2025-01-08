@@ -1,5 +1,5 @@
-/*! elementor - v3.20.0 - 13-03-2024 */
-.dialog-widget-content {
+! elementor - v3.20.0 - 13-03-2024
+/* .dialog-widget-content {
     background-color: var(--e-a-bg-default);
     position: absolute;
     border-radius: 3px;
@@ -345,9 +345,9 @@
 .dialog-type-confirm .dialog-buttons-wrapper .dialog-button:hover,
 .dialog-type-confirm .dialog-buttons-wrapper .dialog-button:visited {
     color: initial
-}
+} */
 
-.flatpickr-calendar {
+/* .flatpickr-calendar {
     width: 280px
 }
 
@@ -443,8 +443,8 @@
 .elementor iframe,
 .elementor object,
 .elementor video {
-    /* max-width: 100%; */
-    /* width: 100%; */
+    max-width: 100%; */
+    /* width: 100%;
     margin: 0;
     object-fit: fill;
     line-height: 1;
@@ -580,7 +580,7 @@
     align-items: var(--align-items);
     align-content: var(--align-content);
     gap: var(--gap)
-}
+} */
 
 /* .elementor-invisible {
     visibility: hidden

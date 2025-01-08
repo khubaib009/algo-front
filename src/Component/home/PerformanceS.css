@@ -1,0 +1,21 @@
+.background-eclipse {
+  background-image: url('./Images/Ellipse\ 1\ \(1\).svg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (min-width: 768px) {
+  .background-eclipse {
+    background-image: url('./Images/Ellipse\ 1.svg');
+    
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-eclipse {
+    background-image: url('./Images/BG\ Image.svg');
+    background-size: cover;
+    background-position: center; 
+  }
+}

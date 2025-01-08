@@ -1,0 +1,155 @@
+/* General Section Styling */
+.header-section {
+  position: relative; 
+  text-align: center;
+  background-color: #fff;
+}
+
+.polygon1, .polygon2, .polygon3 {
+  position: absolute; 
+ 
+}
+
+.polygon1 {
+  top: 180px;
+  left: 20px;
+}
+
+.polygon2 {
+  top: 230px;
+  right: 30px;
+}
+
+.polygon3 {
+  top: 800px;
+  right: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .polygon1, .polygon2, .polygon3 {
+    display: none; 
+  }
+}
+
+.header-content {
+  width: 83%; 
+  margin: 0 auto;
+  padding-top: 80px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  font-size: 74px; 
+  line-height: 90.33px; 
+  width: 100%; 
+  margin: 0;
+}
+
+.header-title .highlight {
+  color: #3b8f6e;
+}
+
+.header-description {
+  font-size: 16px;
+  color: #142929;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  text-align: center;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.header-button {
+  background-color: #3b8f6e;
+  color: #fff;
+  padding: 20px 30px;
+  border: none;
+  border-radius: 25px !important;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+  background-color: #2f7358;
+}
+
+
+.map-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 40.77px !important; 
+    line-height: 49.77px;
+    text-align: center; 
+    width: 90%;
+    margin-top: 40px;
+  }
+
+  .header-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 90%;
+  }
+
+  .header-content {
+    width: 100%; 
+    padding-top: 10px; 
+  }
+
+  .map-image {
+    width: 80%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header-content {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header-title {
+    font-size: 60px; 
+    line-height: 75px; 
+  }
+  .header-description {
+    font-size: 18px;
+    padding: 0 40px;
+  }
+  .map-image {
+    width: 60%;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .header-title {
+    font-size: 74px; 
+    line-height: 90.33px; 
+  }
+  .header-description {
+    font-size: 20px;
+    padding: 0 80px;
+  }
+  .map-image {
+    width: 85%;
+  }
+}

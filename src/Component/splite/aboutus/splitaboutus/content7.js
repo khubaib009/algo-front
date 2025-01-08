@@ -155,7 +155,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
-                height:"250px"
+                height:"400px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -166,7 +166,7 @@ mission to redefine the future of finance.
                       decoding="async"
                       style={{
                         borderRadius: "220px",
-                        width: "45%",
+                        width: "25%",
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/NishantKalia.jpeg"
@@ -222,7 +222,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
-                height:"250px"
+                height:"150px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -239,7 +239,7 @@ mission to redefine the future of finance.
                       src="wp-content/img/abishake.jpeg"
                       className="attachment-full size-full wp-image-36"
                       alt=""
-                      sizes="(max-width: 300px) 100vw, 300px"
+                      sizes="(max-width: 30px) 100vw, 300px"
                     />
                   </Reveal>
                 </div>

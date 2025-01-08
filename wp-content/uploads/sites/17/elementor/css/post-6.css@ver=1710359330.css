@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400;700&family=Inter:wght@100..900&family=Radio+Canada+Big:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:wght@100..700&display=swap');
+
 .elementor-kit-6 {
     --e-global-color-secondary: #0A0118;
     --e-global-color-primary: #787878;
     --e-global-color-text: #FFFFFF;
     --e-global-color-accent: #FFFFFF2B;
+    --e-global-color-3B8F6E: #3B8F6E;
     --e-global-color-d49ac81: #08F9E8;
     --e-global-color-332724a: #6962AD;
     --e-global-color-4d462f5: #DCDCDE;
@@ -109,15 +112,16 @@
     color: var(--e-global-color-332724a);
 }
 
-.elementor-kit-6 h1 {
+/* .elementor-kit-6 h1 {
     color: var(--e-global-color-secondary);
-    font-family: var(--e-global-typography-583e54c-font-family), Sans-serif;
+    font-family: var(--e-global-typography-583e54c-font-family), Sans-serif, "Inter", "Radio Canada Big", "Roboto Mono", monospace;
     font-size: var(--e-global-typography-583e54c-font-size);
     font-weight: var(--e-global-typography-583e54c-font-weight);
     line-height: var(--e-global-typography-583e54c-line-height);
     letter-spacing: var(--e-global-typography-583e54c-letter-spacing);
     word-spacing: var(--e-global-typography-583e54c-word-spacing);
-}
+} */
+
 
 .elementor-kit-6 h2 {
     color: var(--e-global-color-secondary);
@@ -140,7 +144,7 @@
     word-spacing: var(--e-global-typography-d3dae9a-word-spacing);
 }
 
-.elementor-kit-6 h4 {
+/* .elementor-kit-6 h4 {
     color: var(--e-global-color-secondary);
     font-family: var(--e-global-typography-83682a1-font-family), Sans-serif;
     font-size: var(--e-global-typography-83682a1-font-size);
@@ -150,7 +154,7 @@
     line-height: var(--e-global-typography-83682a1-line-height);
     letter-spacing: var(--e-global-typography-83682a1-letter-spacing);
     word-spacing: var(--e-global-typography-83682a1-word-spacing);
-}
+} */
 
 .elementor-kit-6 h5 {
     color: var(--e-global-color-secondary);
@@ -190,7 +194,7 @@
     border-style: solid;
     border-width: 0px 0px 0px 0px;
     border-color: var(--e-global-color-3ee16e7);
-    border-radius: 5px 5px 5px 5px;
+    /* border-radius: 5px 5px 5px 5px; */
 }
 
 .elementor-kit-6 button:hover,
@@ -237,7 +241,7 @@
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-color: var(--e-global-color-cfa1f76);
-    border-radius: 5px 5px 5px 5px;
+    /* border-radius: 5px 5px 5px 5px; */
 }
 
 .elementor-kit-6 input:focus:not([type="button"]):not([type="submit"]),
@@ -266,7 +270,7 @@
     --widgets-spacing: 20px 20px;
 }
 
-    {}
+    /* {} */
 
 h1.entry-title {
     display: var(--page-title-display);
@@ -354,7 +358,7 @@ h1.entry-title {
         line-height: var(--e-global-typography-accent-line-height);
         letter-spacing: var(--e-global-typography-accent-letter-spacing);
         background-color: transparent;
-        background-image:linear-gradient(to right, #3b8f6e, #194136);
+        /* background-image:linear-gradient(to right, #3b8f6e, #194136); */
         /* background-image: linear-gradient(135deg, var(--e-global-color-d49ac81) 20%, var(--e-global-color-332724a) 90%); */
     }
 
