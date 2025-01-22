@@ -20,7 +20,7 @@ const Content7 = () => {
             </div>
             <div className="elementor-element elementor-element-2788e1e elementor-invisible elementor-widget elementor-widget-heading">
               <div className="elementor-widget-container">
-                <h2 className="elementor-heading-title elementor-size-default mt-5">
+                <h2 className="elementor-heading-title elementor-size-default mt-14">
                   Meet Our Expert Team
                 </h2>
               </div>
@@ -84,7 +84,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/KunalDhawan.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      className="attachment-full "
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -155,7 +155,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
-                height:"400px"
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -170,7 +170,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/NishantKalia.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -222,7 +222,7 @@ mission to redefine the future of finance.
               style={{
                 backgroundImage: "linear-gradient(to right, #3b8f6e, #194136)",
                 padding: "1%",
-                height:"150px"
+                height:"250px"
               }}
             >
               <div className="elementor-element elementor-element-b4f6d20 elementor-widget-tablet__width-inherit elementor-widget elementor-widget-image">
@@ -232,12 +232,12 @@ mission to redefine the future of finance.
                       loading="lazy"
                       decoding="async"
                       style={{
-                        borderRadius: "220px",
+                        borderRadius: "20px",
                         width: "45%",
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/abishake.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 30px) 100vw, 300px"
                     />
@@ -317,7 +317,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/viney1.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                       x
@@ -388,7 +388,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/Satvik.jpg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -698,7 +698,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/Keshav.jpg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -763,7 +763,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/AdityaAnand.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -845,7 +845,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/Shashank.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -914,7 +914,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/Badri.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -982,7 +982,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/jean-Luc1.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -1050,7 +1050,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/Vineet.jpg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -1174,7 +1174,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/Sahil.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -1242,7 +1242,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/MUAZZIM.JPG"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -1335,7 +1335,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/Damien.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />
@@ -1395,7 +1395,7 @@ mission to redefine the future of finance.
                         border: "3px solid  white",
                       }}
                       src="wp-content/img/Evren.jpeg"
-                      className="attachment-full size-full wp-image-36"
+                      // className="attachment-full size-full wp-image-36"
                       alt=""
                       sizes="(max-width: 300px) 100vw, 300px"
                     />

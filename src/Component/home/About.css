@@ -1,0 +1,134 @@
+/* General Container */
+.about-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 2rem 0;
+    position: relative;
+  }
+  
+  /* About Section */
+  .about-section {
+    display: flex;
+    
+    gap: 20rem;
+    margin-bottom: 4rem;
+  }
+  
+  .about-title h1 {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #292929;
+  }
+  
+  .about-title h1 .highlight {
+    color: #3B8F6E;
+  }
+  
+  .about-description {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .about-description .line-image {
+    display: none;
+  }
+  
+  .about-description p {
+    font-family: 'Radio Canada', sans-serif;
+    font-size: 1rem;
+    color: #142929;
+    line-height: 1.6;
+  }
+  
+  /* Show Line Image for Larger Screens */
+  @media (min-width: 768px) {
+    .about-description .line-image {
+      display: block;
+    }
+  }
+  
+  /* Why Choose Us Section */
+  .why-choose-us {
+    position: relative;
+    margin-top: 3rem;
+  }
+  
+  .why-choose-us h2 {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 1.5rem;
+    color: #3B8F6E;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .polygon-design {
+    position: absolute;
+    top: 300px;
+    left: -70px;
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .polygon-design {
+      display: block;
+    }
+  }
+  
+  /* Cards Section */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-number {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-number .vertical-line {
+    width: 2px;
+    height: 24px;
+    background-color: #3B8F6E;
+    margin-right: 0.5rem;
+  }
+  
+  .card-number span {
+    font-size: 1.5rem;
+    color: #142929;
+    font-weight: bold;
+  }
+  
+  .card-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .card-content h3 {
+    font-family: 'Gayathri', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: #142929;
+  }
+  
+  .card-content h3 .highlight {
+    color: #3B8F6E;
+  }
+  

@@ -29,15 +29,15 @@ const Multiassets = () => {
                 <ul className="flex flex-row items-center justify-center text-[16px] font-['Radio Canada Big'] text-[#FAFAFA] bg-[#3F9A761C] font-400 p-4 shadow-md w-[250px] h-[56px] mx-auto md:w-[300px] md:h-[150px] md:items-start md:justify-start md:flex-col md:space-x-6 md:space-y-4">
                   <li className="flex md:ml-6 md:mt-3 items-center space-x-1 mr-4 ">
                     <span>✔</span>
-                    <span>Spot</span>
+                    <span>Futures</span>
                   </li>
                   <li className="flex items-center space-x-1 mr-4">
                     <span>✔</span>
-                    <span>Futures</span>
+                    <span>Options</span>
                   </li>
                   <li className="flex items-center space-x-1 ">
                     <span>✔</span>
-                    <span>Options</span>
+                    <span>CFDs</span>
                   </li>
                 </ul>
                 <ul className="flex flex-row items-center justify-center text-[16px] font-['Radio Canada Big'] text-[#FAFAFA] bg-[#3F9A761C] font-400 p-4 shadow-md w-[250px] h-[56px] mx-auto md:w-[300px] md:h-[150px] md:items-start md:justify-start md:flex-col md:space-x-6 md:space-y-4">
@@ -57,16 +57,16 @@ const Multiassets = () => {
                 <ul className="flex flex-row items-center justify-center text-[16px] font-['Radio Canada Big'] text-[#FAFAFA] bg-[#3F9A761C] font-400 p-4 shadow-md w-[250px] h-[56px] mx-auto md:w-[300px] md:h-[150px] md:items-start md:justify-start md:flex-col md:space-x-6 md:space-y-4">
                   <li className="flex md:ml-6 md:mt-3 items-center space-x-1 mr-4">
                     <span>✔</span>
-                    <span>Spot</span>
+                    <span>Index Options</span>
                   </li>
-                  <li className="flex space-x-1 mr-4">
+                  {/* <li className="flex space-x-1 mr-4">
                     <span>✔</span>
                     <span>Futures</span>
                   </li>
                   <li className="flex items-center space-x-1">
                     <span>✔</span>
                     <span>Options</span>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

@@ -69,9 +69,10 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <Link to="/login">
+          <Link to="https://app.algoedge.io" target="_self">
             <button className="login-btn">Log In</button>
-          </Link>
+           </Link>
+
         </div>
         
       </nav>

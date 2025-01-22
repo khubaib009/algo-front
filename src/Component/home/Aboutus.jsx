@@ -132,4 +132,3 @@ const AboutAlgoEdge = () => {
 };
 
 export default AboutAlgoEdge;
-
