@@ -48,7 +48,7 @@ const Strategy = () => {
                 <div className="className">
                   <span className="text-[28px] sm:text-[32px] md:text-[50px] leading-[30px] sm:leading-[60px] font-bold font-['gayathri']">
                     For Investment Managers And{' '}
-                    <span className="font-['gayathri'] text-green-600 mr-4">HNIs</span>
+                    <span className="font-['gayathri'] text-[#3B8F6E] mr-4">HNIs</span>
                   </span>
                   <p className="text-[24px] md:text-[24px] leading-[30px] sm:leading-[60px] font-['gayathri'] font-bold text-[#3B8F6E] mr-4 mt-2">
                     Access AlgoEdge's High-Performing Strategies.

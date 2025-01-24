@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 const Homepage = React.lazy(() => import('./Component/homepage'));
 const Aboutus = React.lazy(()=> import('./Component/splite/aboutus/aboutus'))
 const Team = React.lazy(()=> import('./Component/splite/team/ourteam'))
-const Contact = React.lazy(()=> import('./Component/splite/contact/contact'))
+const Contact = React.lazy(()=> import('./Component/home/contact'))
 const SPStrategy = React.lazy(()=> import('./Component/splite/strategy/spstrategy'))
 const Strategy = React.lazy(()=> import('./Component/splite/strategy/Strategy'))
 

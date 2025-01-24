@@ -5,6 +5,7 @@ const Multiassets = () => {
   return (
     <div>
        <section className="mx-auto mt-20 relative">
+        
             <img
                 src={polygon6}
                 alt="polygon-5"

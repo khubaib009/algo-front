@@ -1,0 +1,10 @@
+/* This class controls the hover effect for descriptions */
+.group:hover .group-hover\:block {
+    display: block;
+  }
+  
+  /* Initially hide descriptions */
+  .group-hover\:block {
+    display: none;
+  }
+  

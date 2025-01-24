@@ -21,7 +21,9 @@ const Footer = () => {
             Providing advanced quantitative and algorithmic strategies to
             investment managers and HNIs.
           </p>
-          <img src={linkedIN} alt="linkedIN" className="md:mb-8 mt-2 md:mt-0" />
+          <a href="https://www.linkedin.com/company/algoedge-cad/people/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedIN} alt="LinkedIn" className="md:mb-8 mt-2 md:mt-0" />
+          </a>
         </div>
         
       </div>

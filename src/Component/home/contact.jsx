@@ -5,7 +5,8 @@ const ContactForm = () => {
 
 
   return (
-    <section className= "relative py-12">
+    <section id = "contact">
+      <div className = "relative py-12">
        <img
               src={polygon6}
               alt="polygon-4"
@@ -72,6 +73,7 @@ const ContactForm = () => {
             className="max-w-[250px] sm:max-w-[300px] lg:max-w-[350px]"
           />
         </div>
+      </div>
       </div>
     </section>
   );

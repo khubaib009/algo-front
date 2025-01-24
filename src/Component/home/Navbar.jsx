@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // For SPA navigation
+import { Link } from "react-scroll"; // For SPA smooth scrolling
 import logo from "./Images/logo-icon.svg";
-import styled from 'styled-components'; 
+
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -49,32 +49,32 @@ const Navbar = () => {
         <div className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="/Strategies" className="menu-link">
+              <Link to="strategies" smooth={true} duration={500} className="menu-link">
                 Strategies
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/Institutional_Investors" className="menu-link">
+              <Link to="institutional-investors" smooth={true} duration={500} className="menu-link">
                 Institutional Investors
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/team" className="menu-link">
+              <Link to="team" smooth={true} duration={500} className="menu-link">
                 Team
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/blog" className="menu-link">
+              <Link to="blog" smooth={true} duration={500} className="menu-link">
                 Blog
               </Link>
             </li>
           </ul>
-          <Link to="https://app.algoedge.io" target="_self">
-            <button className="login-btn">Log In</button>
-           </Link>
-
+          <button className="login-btn">
+            <Link to="contact" smooth={true} duration={500} className="menu-link">
+              Contact Us
+            </Link>
+          </button>
         </div>
-        
       </nav>
     </header>
   );
