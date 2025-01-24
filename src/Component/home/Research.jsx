@@ -23,7 +23,7 @@ const Research = () => {
       number: "02",
       title: "Whitepaper Development",
       description:
-        "Prepare comprehensive documentation to define the strategy and execution.",
+        "Document strategies, expected outcomes, and risks for transparency.",
       icon: (
         <img
           src={icon11}
@@ -36,7 +36,7 @@ const Research = () => {
       number: "03",
       title: "Backtesting",
       description:
-        "Simulate the strategy using historical data to validate its performance.",
+        "Test strategies on historical data to assess performance and uncover weaknesses.",
       icon: (
         <img
           src={icon11}
@@ -48,7 +48,7 @@ const Research = () => {
     {
       number: "04",
       title: "Refinement",
-      description: "Optimize the strategy based on backtesting results.",
+      description: "Adjust strategies to fix inefficiencies based on backtest results.",
       icon: (
         <img
           src={icon11}
@@ -61,7 +61,7 @@ const Research = () => {
       number: "05",
       title: "Live Trading",
       description:
-        "Deploy the strategy in real-world conditions to generate results.",
+        "Deploy strategies in live markets, adjusting based on real-time conditions.",
       icon: (
         <img
           src={icon11}
@@ -74,7 +74,7 @@ const Research = () => {
       number: "06",
       title: "Continual Refinement",
       description:
-        "Monitor and improve the strategy based on ongoing performance analysis.",
+        "Continuously improve strategies to stay aligned with market trends.",
       icon: (
         <img
           src={icon11}
@@ -114,7 +114,7 @@ const Research = () => {
             >
               {/* Icon Section */}
               {step.icon && (activeStep === index || (activeStep === null && index === 0)) && (
-                <div className="absolute flex items-center justify-center bg-[#3B8F6E] w-12 h-[116px] sm:w-28 md:h-[105px] right-0 top-0 rounded-lg">
+                <div className="absolute flex items-center justify-center bg-[#3B8F6E] w-12 h-[140px] sm:w-28 md:h-[113px] right-0 top-0 rounded-lg">
                   {step.icon}
                 </div>
               )}
@@ -128,7 +128,7 @@ const Research = () => {
               </div>
             
               {/* Title and Description */}
-              <div className="flex-1 sm:ml-12 text-left w-full sm:w-[80%]">
+              <div className="flex-1 sm:ml-12 text-left w-full  sm:w-[80%]">
                 <h4 className="text-[16px] md:text-[20px] font-['gayathri'] font-bold text-[#142929]">
                   {step.title}
                 </h4>
