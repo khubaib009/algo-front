@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from "../header"
+import Header from "../../home/Navbar"
 import Footer from "../footer"
 import { Fade } from "react-awesome-reveal";
 

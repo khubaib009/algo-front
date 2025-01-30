@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Header from '../splite/header'
+import Header from '../home/Navbar'
 import Footer from '../splite/footer'
 import './blog.css'
 import { useNavigate } from 'react-router-dom';

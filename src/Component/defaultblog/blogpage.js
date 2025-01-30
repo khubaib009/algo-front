@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../splite/header'
+import Header from '../home/Navbar'
 import Footer from '../splite/footer'
 
 

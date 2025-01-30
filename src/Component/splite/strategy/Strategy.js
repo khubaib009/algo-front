@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../header'
+import Header from '../../home/Navbar'
 import Footer from '../footer'
 import Research from './images/seo.png'
 import whitepaper from './images/papers.png'

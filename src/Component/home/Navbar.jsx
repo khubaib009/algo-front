@@ -1,7 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // Use react-router-dom for navigation
+import { Link } from "react-router-dom"; // For navigation between pages
+import { Link as ScrollLink } from "react-scroll"; // For smooth scrolling on the same page
 import logo from "./Images/logo-icon.svg";
 import "./Navbar.css";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -69,9 +71,9 @@ const Navbar = () => {
             </li>
           </ul>
           <button className="login-btn">
-            <Link to="/contact" className="menu-link">
+            <ScrollLink to="contact" smooth={true} duration={500} className="menu-link">
               Contact Us
-            </Link>
+            </ScrollLink>
           </button>
         </div>
       </nav>
