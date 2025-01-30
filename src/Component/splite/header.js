@@ -72,19 +72,19 @@ const Header = () => {
                 >
                   <nav className="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none" style={{backgroundColor:'#142929'}}>
                     <ul id="menu-1-49498c67" className="elementor-nav-menu" >
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-126">
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom current-menu-item menu-item-126">
                         <a href="/" aria-current="page" className="elementor-item elementor-item-active" >
                           Home
                         </a>
-                      </li> */}
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-127">
+                      </li>
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-127">
                         <a
                           href="/aboutus"
                           className="elementor-item"
                         >
                           About
                         </a>
-                      </li> */}
+                      </li>
                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
                         <a href="/Strategies" className="elementor-item" >
                         Strategies
@@ -98,15 +98,15 @@ const Header = () => {
                          Institutional Investors
                         </a>
                       </li> 
-                        {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-127">
+                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-127">
                         <a
                           href="/Individual_Traders"
                           className="elementor-item"
                         >
                          Individual Traders
                         </a>
-                      </li>  */}
-                        {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
+                      </li> 
+                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
                         <ul className="sub-menu elementor-nav-menu--dropdown" style={{ display: dropdown ? 'block' : 'none',width:'150px' }}>
                         <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-129">
                             <a href="/b2b" className="elementor-sub-item" tabIndex={-1} >
@@ -119,10 +119,10 @@ const Header = () => {
                             </a>
                           </li>
                         </ul>
-                        <a onClick={() => { setDropdown(true) }} className="elementor-item" >
+                        {/* <a onClick={() => { setDropdown(true) }} className="elementor-item" >
                           Our Offerings
-                        </a>
-                      </li> */}
+                        </a> */}
+                      </li>
 
                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128">
                         <a href="/team" className="elementor-item" >
@@ -141,14 +141,14 @@ const Header = () => {
                         Blog
                         </a>
                       </li>
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
                         <a
                           href="/contact"
                           className="elementor-item"
                         >
                           Contact
                         </a>
-                      </li> */}
+                      </li>
 
                     </ul>
                   </nav>
@@ -186,7 +186,7 @@ const Header = () => {
                         >
                           Home
                         </a>
-                        {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
+                        <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
                        
                         <a
                           onClick={() => { setCardOne(true) }}
@@ -214,7 +214,7 @@ const Header = () => {
                             </a>
                           </li>
                         </ul>
-                      </li> */}
+                      </li>
         
                       </li>
 
@@ -235,15 +235,15 @@ const Header = () => {
                        Institutional Investors
                   </a>
                       </li> 
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
                         <a href="/Individual_Traders" className="elementor-item"  tabIndex={-1}  >
                          Individual Traders
                   </a>
-                      </li> */}
+                      </li>
                       
                       
                       
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
+                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
                         <a
                           href="/Data-Innovation"
                           className="elementor-item"
@@ -251,8 +251,8 @@ const Header = () => {
                         >
                           Data Innovation
                   </a>
-                      </li> */}
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-127">
+                      </li> 
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-127">
                         <a
                           href="/aboutus"
                           className="elementor-item"
@@ -260,13 +260,13 @@ const Header = () => {
                         >
                           About Us
                         </a>
-                      </li> */}
+                      </li> 
                         
                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-128">
                         <a href="/team" className="elementor-item" tabIndex={-1} >
                           Team
                         </a>
-                        {/* <ul className="sub-menu elementor-nav-menu--dropdown">
+                        <ul className="sub-menu elementor-nav-menu--dropdown">
                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-129">
                         <a
                           href="#"
@@ -285,10 +285,10 @@ const Header = () => {
                           Contact
                         </a>
                       </li>
-                    </ul> */}
+                    </ul> 
                       </li>
                      
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
                         <a
                           href="/Data-Innovation"
                           className="elementor-item"
@@ -296,7 +296,7 @@ const Header = () => {
                         >
                           Data Innovation
                   </a>
-                      </li> */}
+                      </li>
   
                       <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
                         <a href="/blog" className="elementor-item" tabIndex={-1} >
@@ -304,7 +304,7 @@ const Header = () => {
                         </a>
                       </li>
 
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
                         <a
                           href="/contact"
                           className="elementor-item"
@@ -312,10 +312,10 @@ const Header = () => {
                         >
                           Contact
                         </a>
-                      </li> */}
+                      </li>
 
 
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-137">
                     <a
                       href="#"
                       className="elementor-item"
@@ -323,8 +323,8 @@ const Header = () => {
                     >
                       Product
                     </a>
-                  </li> */}
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
+                  </li>
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-130">
                     <a
                       href="#"
                       className="elementor-item"
@@ -332,8 +332,8 @@ const Header = () => {
                     >
                       Contact
                     </a>
-                  </li> */}
-                      {/* <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-131">
+                  </li>
+                      <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-131">
                     <a
                       href="#"
                       className="elementor-item elementor-item-anchor"
@@ -388,7 +388,7 @@ const Header = () => {
                         </a>
                       </li>
                     </ul>
-                  </li> */}
+                  </li>
                     </ul>
                   </nav>
                 </div>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-scroll"; // For SPA smooth scrolling
+import { Link } from "react-router-dom"; // Use react-router-dom for navigation
 import logo from "./Images/logo-icon.svg";
-
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -49,28 +48,28 @@ const Navbar = () => {
         <div className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="strategies" smooth={true} duration={500} className="menu-link">
+              <Link to="/strategies" className="menu-link">
                 Strategies
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="institutional-investors" smooth={true} duration={500} className="menu-link">
+              <Link to="/Institutional_Investors" className="menu-link">
                 Institutional Investors
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="team" smooth={true} duration={500} className="menu-link">
+              <Link to="/team" className="menu-link">
                 Team
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="blog" smooth={true} duration={500} className="menu-link">
+              <Link to="/blog" className="menu-link">
                 Blog
               </Link>
             </li>
           </ul>
           <button className="login-btn">
-            <Link to="contact" smooth={true} duration={500} className="menu-link">
+            <Link to="/contact" className="menu-link">
               Contact Us
             </Link>
           </button>

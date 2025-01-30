@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 import polygon7 from "./Images/Polygon 7.svg";
 import icon11 from "./Images/S-Icon.svg";
+import icon2 from './Images/Picture1.png'
+import icon3 from './Images/Picture2.png'
+import icon4 from './Images/Picture3.png'
+import icon5 from './Images/Picture4.png'
+import icon6 from './Images/Picture5.png'
+
 
 const Research = () => {
   const [activeStep, setActiveStep] = useState(null); // Default to null (show first step by default)
@@ -26,7 +32,7 @@ const Research = () => {
         "Document strategies, expected outcomes, and risks for transparency.",
       icon: (
         <img
-          src={icon11}
+          src={icon2}
           alt="icon11"
           className="w-8 h-8 sm:w-10 sm:h-10"
         />
@@ -39,7 +45,7 @@ const Research = () => {
         "Test strategies on historical data to assess performance and uncover weaknesses.",
       icon: (
         <img
-          src={icon11}
+          src={icon3}
           alt="icon11"
           className="w-8 h-8 sm:w-10 sm:h-10"
         />
@@ -51,7 +57,7 @@ const Research = () => {
       description: "Adjust strategies to fix inefficiencies based on backtest results.",
       icon: (
         <img
-          src={icon11}
+          src={icon4}
           alt="icon11"
           className="w-8 h-8 sm:w-10 sm:h-10"
         />
@@ -64,7 +70,7 @@ const Research = () => {
         "Deploy strategies in live markets, adjusting based on real-time conditions.",
       icon: (
         <img
-          src={icon11}
+          src={icon5}
           alt="icon11"
           className="w-8 h-8 sm:w-10 sm:h-10"
         />
@@ -77,7 +83,7 @@ const Research = () => {
         "Continuously improve strategies to stay aligned with market trends.",
       icon: (
         <img
-          src={icon11}
+          src={icon6}
           alt="icon11"
           className="w-8 h-8 sm:w-10 sm:h-10"
         />

@@ -9,6 +9,7 @@ import Research from '../home/Research'
 import Risk from '../home/Risk'
 import ContactForm from '../home/contact'
 import Footer from '../home/Footer'
+import Heading from './header'
 import '../../index.css'
 const Body = () => {
   return (
@@ -16,6 +17,7 @@ const Body = () => {
 		data-elementor-post-type="envato_tk_templates">
 
       <Navbar />
+      {/* <Heading /> */}
       <Header />
       <About />
       <Performance />
