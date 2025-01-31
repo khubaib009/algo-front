@@ -13,7 +13,7 @@
   flex-wrap: wrap;
 }
 
-.navbar-logo {
+.logo-link {
   display: flex;
   align-items: center;
   gap: 0.5rem;

@@ -1,22 +1,44 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; // For navigation between pages
-import { Link as ScrollLink } from "react-scroll"; // For smooth scrolling on the same page
+import { Link, useNavigate, useLocation } from "react-router-dom"; // Added useNavigate and useLocation
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; // For smooth scrolling
 import logo from "./Images/logo-icon.svg";
 import "./Navbar.css";
 
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate(); // For navigation
+  const location = useLocation(); // Get current URL path
+
+  const handleContactClick = () => {
+    if (location.pathname === "/") {
+      // If already on the home page, just scroll to contact
+      scroll.scrollTo(document.getElementById("contact").offsetTop, {
+        duration: 500,
+        smooth: "easeInOutQuad",
+      });
+    } else {
+      // Navigate to home first, then scroll to contact after the page loads
+      navigate("/");
+      setTimeout(() => {
+        scroll.scrollTo(document.getElementById("contact").offsetTop, {
+          duration: 500,
+          smooth: "easeInOutQuad",
+        });
+      }, 500); // Delay scrolling to ensure page has loaded
+    }
+  };
 
   return (
     <header className="navbar-header">
       <nav className="navbar-container">
         {/* Logo Section */}
         <div className="navbar-logo">
-          <div className="logo-circle">
-            <img src={logo} alt="Logo" className="logo" />
-          </div>
-          <span className="logo-text">AlgoEdge</span>
+          <Link to="/" className="logo-link">
+            <div className="logo-circle">
+              <img src={logo} alt="Logo" className="logo" />
+            </div>
+            <span className="logo-text">AlgoEdge</span>
+          </Link>
         </div>
 
         {/* Hamburger Menu (Visible on Mobile) */}
@@ -70,10 +92,8 @@ const Navbar = () => {
               </Link>
             </li>
           </ul>
-          <button className="login-btn">
-            <ScrollLink to="contact" smooth={true} duration={500} className="menu-link">
-              Contact Us
-            </ScrollLink>
+          <button className="login-btn" onClick={handleContactClick}>
+            Contact Us
           </button>
         </div>
       </nav>

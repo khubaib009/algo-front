@@ -5,6 +5,7 @@ import location from './Images/Location (2).svg';
 import email from './Images/Email-Icon.svg';
 import phone from './Images/Layer_1.svg';
 import linkedIN from './Images/LinkedIN.svg';
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import './PerformanceS.css'
 
 const Footer = () => {
@@ -36,29 +37,30 @@ const Footer = () => {
             <h2 className="text-[14px] md:text-[16px] font-semibold text-[#ffffff]">Company</h2>
             <ul className="flex flex-col md:flex-row gap-2 md:gap-8 font-['Radio Canada Big'] md:text-[16px] font-normal text-[14px] md:text-left">
               <li>
-                <a href="#home" className="md:mb-0 hover:text-green-500 text-[#a2a9a9]">
+                <a href="/home" className="md:mb-0 hover:text-green-500 text-[#a2a9a9]">
                   Home
                 </a>
               </li>
-              <li>
-                <a href="#strategies" className="hover:text-green-500 text-[#a2a9a9]">
-                  Strategies
-                </a>
-              </li>
-              <li>
-                <a href="#investors" className="hover:text-green-500 text-[#a2a9a9]">
+               <li>
+                  <Link to="/strategies" className="hover:text-green-500 text-[#a2a9a9]">
+                    Strategies
+                  </Link>
+                </li>
+              <li> 
+                <Link to="/Institutional_Investors" className="hover:text-green-500 text-[#a2a9a9]">
                   Institutional Investors
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#team" className="hover:text-green-500 text-[#a2a9a9]">
+                <Link to="/team" className="hover:text-green-500 text-[#a2a9a9]">
                   Team
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#blog" className="hover:text-green-500 text-[#a2a9a9]">
+                <Link to="/blog" className="hover:text-green-500 text-[#a2a9a9]">
                   Blog
-                </a>
+                </Link>
+                
               </li>
             </ul>
           </div>
@@ -75,7 +77,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 flex-wrap">
                 <img src={email} alt="capa2" className="w-4 h-4" />
-                <p className="text-[#a2a9a9]">kunal.dhawan@algoedge.io</p>
+                <p className="text-[#a2a9a9]">info@algoedge.io</p>
               </li>
               <li className="flex items-center gap-2 flex-wrap">
                 <img src={phone} alt="capa2" className="w-4 h-4" />
