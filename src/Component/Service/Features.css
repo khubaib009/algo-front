@@ -1,0 +1,113 @@
+.features-container{
+  width: 88%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.feature-section {
+  margin-bottom: 30px;
+}
+
+.feature-section h2 {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #3b8f6e;
+  font-size: 50px;
+  line-height: 90.33px;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 24px;
+}
+.feature-section p{
+  margin-bottom: 30px;
+}
+
+.feature-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature-text {
+  width: 50%;
+}
+.feature-text h2{
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #3b8f6e;
+  font-size: 50px;
+  line-height: 90.33px;
+  width: 100%;
+  margin: 0;
+}
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+  .feature-container {
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-text, .feature-image {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+
+  .feature-image img {
+    width: 100%;
+    height: auto;
+  }
+}

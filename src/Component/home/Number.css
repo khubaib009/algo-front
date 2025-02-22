@@ -1,0 +1,149 @@
+.algoedge-numbers {
+  display: flex;
+  flex-direction: column;
+  width: 86%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 40px;
+  text-align: center;
+  border-radius:10px;
+  gap: 50px;
+  
+}
+
+/* Title section styles */
+.title-section {
+  max-width: 500PX;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.title-section > h1 {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #000 !important;
+  font-size: 74px !important;
+  line-height: 90px;
+  margin: 0;
+}
+
+.title-section .highlight {
+  
+  color: #3b8f6e !important;
+  font-size: 74px !important;
+  line-height: 70px;
+  margin: 0;
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-bottom: 20px;
+}
+
+/* Individual stat item */
+.stats-section p {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  font-size: 16px;
+  font-family: "Radio Canada Big", sans-serif;
+  color: #000 !important;
+}
+
+/* Number styling */
+.stat-number {
+  font-weight: bold;
+  color: #fff !important;
+  background-color: #3b8f6e !important;
+  padding: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  width: 36px;
+  text-align: center;
+  align-self: flex-start; /* Aligns numbers to the start */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .algoedge-numbers {
+    width: 100%;
+    text-align: center;
+    gap: 30px;
+    padding: 10px;
+  }
+
+  .title-section {
+    padding: 20px;
+  }
+
+  .title-section h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .title-section .highlight {
+    font-size: 40px;
+  }
+
+  .stats-section {
+    padding: 0 10px;
+    margin-left: 60px;
+    gap: 20px;
+  }
+
+  .stats-section p {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .stat-number {
+    width: 30px;
+    font-size: 14px;
+    
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 768px) {
+  .algoedge-numbers {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .title-section {
+    width: 50%;
+  }
+
+  .stats-section {
+    width: 50%;
+  }
+
+  .title-section h1 {
+    font-size: 52px;
+  }
+
+  .title-section .highlight {
+    font-size: 32px;
+  }
+
+  .stat-number {
+    text-align: start;
+    align-self: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title-section h1 {
+    font-size: 64px;
+  }
+
+  .title-section .highlight {
+    font-size: 40px;
+  }
+}

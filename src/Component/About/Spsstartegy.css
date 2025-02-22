@@ -1,0 +1,131 @@
+.strategy-container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Strategy Card */
+.strategy-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.strategy-card:hover {
+  transform: scale(1.03);
+}
+
+.strategy-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-content h3 {
+  font-family: "Gayathri", sans-serif !important;
+  font-weight: 700;
+  color: #000;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 14px;
+  color: #555;
+  flex-grow: 1;
+}
+
+.borderline {
+  border: 1px solid #000;
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Button */
+.tag {
+  display: inline-block;
+  background: #3b8f6e !important;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-align: center;
+  width: fit-content;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 1024px) {
+  .strategy-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .strategy-image {
+    height: 180px;
+  }
+  .card-content h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 13px;
+  }
+  .tag {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .strategy-container {
+    grid-template-columns: 1fr;
+  }
+  .strategy-image {
+    height: 160px;
+  }
+  .card-content h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+  .tag {
+    font-size: 11px;
+    padding: 7px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .strategy-container {
+    width: 95%;
+    padding: 15px;
+  }
+  .strategy-image {
+    height: 140px;
+  }
+  .card-content h3 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 11px;
+  }
+  .tag {
+    font-size: 10px;
+    padding: 6px 8px;
+  }
+}

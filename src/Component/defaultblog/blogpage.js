@@ -8,8 +8,8 @@ const Blogpage = () => {
 
   return (
     <div>
-    <Header />
-    <div data-elementor-type="archive" data-elementor-id={16}  className="elementor elementor-16 elementor-location-archive"   data-elementor-post-type="elementor_library" >
+    {/* <Header /> */}
+    <div data-elementor-type="archive" data-elementor-id={16}  className="elementor elementor-16 elementor-location-archive w-[87%]  mx-auto mt-20"   data-elementor-post-type="elementor_library" >
       <div
         className="elementor-element elementor-element-22b2af8b e-flex e-con-boxed e-con e-parent"
         data-id="22b2af8b"
@@ -17,27 +17,34 @@ const Blogpage = () => {
         data-settings='{"background_background":"classic"}'
         data-core-v316-plus="true"
       >
-        <div className="e-con-inner">
-          <div className="elementor-element elementor-element-79ebda9b e-con-full e-flex e-con e-child" data-id="79ebda9b" data-element_type="container" >
-            <div className="elementor-element elementor-element-4a84a3c2 elementor-invisible elementor-widget elementor-widget-heading"
-              data-id="4a84a3c2"
-              data-element_type="widget"
-              data-settings='{"_animation":"fadeInLeft"}'
-              data-widget_type="heading.default" >
-              <div className="elementor-widget-container">
-                <style
-                  dangerouslySetInnerHTML={{
-                    __html:
-                      "\n\t\t\t\t\t\t\t\t/*! elementor - v3.20.0 - 13-03-2024 */\n\t\t\t\t\t\t\t\t.elementor-heading-title {\n\t\t\t\t\t\t\t\t\tpadding: 0;\n\t\t\t\t\t\t\t\t\tmargin: 0;\n\t\t\t\t\t\t\t\t\tline-height: 1\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {\n\t\t\t\t\t\t\t\t\tcolor: inherit;\n\t\t\t\t\t\t\t\t\tfont-size: inherit;\n\t\t\t\t\t\t\t\t\tline-height: inherit\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-small {\n\t\t\t\t\t\t\t\t\tfont-size: 15px\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-medium {\n\t\t\t\t\t\t\t\t\tfont-size: 19px\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-large {\n\t\t\t\t\t\t\t\t\tfont-size: 29px\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-xl {\n\t\t\t\t\t\t\t\t\tfont-size: 39px\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {\n\t\t\t\t\t\t\t\t\tfont-size: 59px\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t"
-                  }}
-                />
-                <h1 className="elementor-heading-title elementor-size-default">
-                  Article &amp; News
-                </h1>
-              </div>
-            </div>
-          </div>
-        </div>
+       <div className="e-con-inner">
+  <div className="elementor-element elementor-element-79ebda9b e-con-full e-flex e-con e-child" data-id="79ebda9b" data-element_type="container"
+    style={{
+      height: '40px', // Set the desired height
+      display: 'flex', // Use flexbox for centering
+      justifyContent: 'center', // Center horizontally
+      alignItems: 'center', // Center vertically
+    }} >
+    <div className="elementor-element elementor-element-4a84a3c2 elementor-invisible elementor-widget elementor-widget-heading"
+      data-id="4a84a3c2"
+      data-element_type="widget"
+      data-settings='{"_animation":"fadeInLeft"}'
+      data-widget_type="heading.default" >
+      <div className="elementor-widget-container">
+        <style
+          dangerouslySetInnerHTML={{
+            __html:
+              "\n\t\t\t\t\t\t\t\t/*! elementor - v3.20.0 - 13-03-2024 */\n\t\t\t\t\t\t\t\t.elementor-heading-title {\n\t\t\t\t\t\t\t\t\tpadding: 0;\n\t\t\t\t\t\t\t\t\tmargin: 0;\n\t\t\t\t\t\t\t\t\tline-height: 1\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {\n\t\t\t\t\t\t\t\t\tcolor: inherit;\n\t\t\t\t\t\t\t\t\tfont-size: inherit;\n\t\t\t\t\t\t\t\t\tline-height: inherit\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-small {\n\t\t\t\t\t\t\t\t\tfont-size: 15px\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-medium {\n\t\t\t\t\t\t\t\t\tfont-size: 19px\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-large {\n\t\t\t\t\t\t\t\t\tfont-size: 29px\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-xl {\n\t\t\t\t\t\t\t\t\tfont-size: 39px\n\t\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t\t.elementor-widget-heading .elementor-heading-title.elementor-size-xxl {\n\t\t\t\t\t\t\t\t\tfont-size: 59px\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t"
+          }}
+        />
+        <h1 className="text-[62px] font-['gayathri'] elementor-heading-title elementor-size-default text">
+          Article &amp; News
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
       <div className="elementor-element elementor-element-2eaab58a e-flex e-con-boxed e-con e-parent"  data-id="2eaab58a" data-element_type="container" data-core-v316-plus="true" >
         <div className="e-con-inner">
@@ -177,7 +184,10 @@ option on the same underlying asset with the same expiration date and strike pri
         </div>
       </div>
     </div>
-    <Footer />
+    {/* <Footer /> */}
+    <div className="flex  justify-center mb-10">
+        <button className="header-button">View More</button>
+    </div>
   </div>
   )
 }

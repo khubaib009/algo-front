@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../home/Navbar'
 import Header from '../home/Header'
-import About from '../home/Aboutus'
-import Performance from '../home/Performance'
 import Startegy from '../home/Strategy'
 import Multiassests from '../home/Multiassets'
-import Research from '../home/Research'
-import Risk from '../home/Risk'
-import ContactForm from '../home/contact'
+
 import Footer from '../home/Footer'
-import Heading from './header'
+import Number from '../home/Number'
+
+import Logo from '../home/Logos'
+import Schedule from '../home/Schedule'
 import '../../index.css'
+import DefaultBlog from '../defaultblog/blogpage'
 const Body = () => {
   return (
 	<div data-elementor-type="wp-post" data-elementor-id="102" class="elementor elementor-102"
@@ -18,15 +18,21 @@ const Body = () => {
 
       <Navbar />
       {/* <Heading /> */}
+      
       <Header />
-      <About />
-      <Performance />
+      {/* <About /> */}
+      {/* <Logo /> */}
+      {/* <Performance /> */}
       <Startegy />
-      <Multiassests />
-      <Research />
-      <Risk />
-      <ContactForm />
-      <Footer />
+      {/* <Number />
+      <Multiassests /> */}
+      
+      {/* <Schedule />  */}
+      
+      {/* <ContactForm /> */}
+      {/* <DefaultBlog />
+      <Footer /> */}
+
         </div>
   )
 }

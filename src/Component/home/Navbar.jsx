@@ -1,32 +1,13 @@
 import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom"; // Added useNavigate and useLocation
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; // For smooth scrolling
+import { Link } from "react-router-dom";
 import logo from "./Images/logo-icon.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate(); // For navigation
-  const location = useLocation(); // Get current URL path
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  const handleContactClick = () => {
-    if (location.pathname === "/") {
-      // If already on the home page, just scroll to contact
-      scroll.scrollTo(document.getElementById("contact").offsetTop, {
-        duration: 500,
-        smooth: "easeInOutQuad",
-      });
-    } else {
-      // Navigate to home first, then scroll to contact after the page loads
-      navigate("/");
-      setTimeout(() => {
-        scroll.scrollTo(document.getElementById("contact").offsetTop, {
-          duration: 500,
-          smooth: "easeInOutQuad",
-        });
-      }, 500); // Delay scrolling to ensure page has loaded
-    }
-  };
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
   return (
     <header className="navbar-header">
@@ -41,7 +22,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Hamburger Menu (Visible on Mobile) */}
+        {/* Hamburger Menu (Mobile) */}
         <div className="hamburger-menu">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -72,29 +53,48 @@ const Navbar = () => {
         <div className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="/strategies" className="menu-link">
-                Strategies
-              </Link>
+              <Link to="/" className="menu-link">Home</Link>
+            </li>
+            <li className="menu-item dropdown">
+              <span className="menu-link dropdown-toggle" onClick={toggleDropdown}>
+                Solutions
+              </span>
+              {isDropdownOpen && (
+                <div className="dropdown-card">
+                  <Link to="/finles-service" className="menu-link">
+                    <div className="dropdown-item">
+                      <h1>Expertly Managed Funds</h1>
+                      <p className="item-description">
+                        Hands-off investment approach <br /> through AlgoEdge’s trusted global  <br /> partner funds.
+                      </p>
+                    </div>
+                  </Link>
+                  <Link to="/Qaas-service" className="menu-link">
+                    <div className="dropdown-item">
+                      <h1>Quant Trading SaaS</h1>
+                      <p className="item-description">
+                        Empower your trading operations<br /> with AlgoEdge’s Quant SaaS without the need <br />in-house team.
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              )}
             </li>
             <li className="menu-item">
-              <Link to="/Institutional_Investors" className="menu-link">
-                Institutional Investors
-              </Link>
+              <Link to="/Investment-Products" className="menu-link">Investment Products</Link>
             </li>
             <li className="menu-item">
-              <Link to="/team" className="menu-link">
-                Team
-              </Link>
+              <Link to="#" className="menu-link">News & Insights</Link>
             </li>
             <li className="menu-item">
-              <Link to="/blog" className="menu-link">
-                Blog
-              </Link>
+              <Link to="/team" className="menu-link">About Us</Link>
             </li>
           </ul>
-          <button className="login-btn" onClick={handleContactClick}>
-            Contact Us
-          </button>
+          <Link to="/contact" className="menu-link">
+            <button className="login-btn">
+              Contact Us
+            </button>
+          </Link>
         </div>
       </nav>
     </header>

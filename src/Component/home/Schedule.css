@@ -1,0 +1,83 @@
+.cta-container {
+  width: 85%;
+  margin: 0 auto;
+  top: 40px;
+  background: #f4fffb;
+  color: white;
+  text-align: center;
+  padding: 80px 15px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-container h2 {
+  margin-bottom: 10px;
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  line-height: 90.33px;
+  color: #142929;
+  text-align: center;
+  font-size: 40px;
+}
+
+.cta-container p {
+  font-family: "Gayathri", sans-serif;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #3b8f6e;
+}
+
+.cta-container > button {
+  top: 10px;
+  background: #3b8f6e !important;
+  color: #ffffff;
+  border: none;
+  padding: 15px 25px;
+  font-family: "Radio Canada Big", sans-serif;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .cta-container {
+      padding: 50px 10px;
+      width: 95%;
+  }
+
+  .cta-container h2 {
+      font-size: 28px;
+      line-height: 40px;
+  }
+
+  .cta-container p {
+      font-size: 18px;
+      line-height: 28px;
+  }
+
+  .cta-container > button {
+      padding: 10px 20px;
+      font-size: 16px;
+  }
+}
+
+.background-eclipse {
+  background-image: url('./Images/Ellipse\ 1\ \(1\).svg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .background-eclipse {
+      background-image: url('./Images/Ellipse\ 1.svg');
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-eclipse {
+      background-image: url('./Images/BG\ Image.svg');
+      background-size: cover;
+      background-position: center;
+  }
+}

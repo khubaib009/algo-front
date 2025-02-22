@@ -1,0 +1,203 @@
+.footer {
+    background-color: #142929;
+    padding: 40px 0;
+    position: relative;
+  }
+.footer-border{
+  
+  position: absolute;
+  border: 1px solid #ddd;
+  top:200px
+}
+  .footer-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+ 
+  .footer-section {
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  .newsletter-section {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .newsletter-title {
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #fff !important;
+    text-align: center;
+    font-size: 50px !important;
+    margin-bottom: 5px;
+  }
+  
+  .newsletter-text {
+    font-size: 16px;
+    font-family: "Radio Canada Big", sans-serif !important;
+    color: #fff !important;
+    margin-bottom: 20px;
+  }
+  
+  .newsletter-buttons {
+    background-color: #14b8a6 !important;
+    color: #fff;
+    padding: 2px 20px !important;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+  }
+  
+  .newsletter-button:hover {
+    background-color: #0d9488;
+  }
+  
+  .footer-main {
+    display: flex;
+    gap:80px;
+    margin-bottom: 40px;
+  }
+  
+ 
+  
+  .footer-title {
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .section-title {
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    color: #555;
+    font-size: 14px;
+    
+  }
+  .footer-menu{
+    display: flex;
+    gap: 40px;
+  }
+  .footer-list li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-family: "Radio Canada Big", sans-serif !important;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .footer-text {
+    font-size: 16px;
+    font-family: "Radio Canada Big", sans-serif !important;
+    color: #777;
+    font-size: 14px;
+  }
+  
+  .footer-link {
+    color: #14b8a6;
+    text-decoration: none;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .footer-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    color: #777;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .icon:hover {
+    color: #14b8a6;
+  }
+  @media (max-width: 768px) {
+    .footer-main {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .newsletter-title {
+      font-size: 30px;
+    }
+  
+    .newsletter-text {
+      font-size: 14px;
+      text-align: center;
+    }
+  
+    .newsletter-buttons {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  
+    .footer-section {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .footer-list li {
+      margin-bottom: 5px;
+    }
+  
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .newsletter-title {
+      font-size: 24px;
+    }
+    .footer-menu {
+      flex-direction: column;
+    }
+    .footer-section {
+      padding: 0 10px;
+    }
+  
+    .footer-text,
+    .footer-list li {
+      font-size: 12px;
+    }
+    .contact-info{
+      flex-direction: column;
+      gap: 100px;
+    }
+    .contact-info >p{
+      margin-bottom: 5px;
+    }
+    .footer-icons {
+      gap: 10px;
+    }
+  }
+  
