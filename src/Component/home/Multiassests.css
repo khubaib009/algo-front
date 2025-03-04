@@ -1,0 +1,191 @@
+/* Center the container */
+.multiassets-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Section container */
+.multiassets-section {
+  position: relative;
+  margin-top: 80px;
+  width: 87%;
+}
+
+/* Polygon image styling */
+.polygon-image {
+  display: none;
+  position: absolute;
+  left: 10px;
+  top: 16px;
+}
+@media (min-width: 768px) {
+  .polygon-image {
+    display: block;
+  }
+}
+
+/* Overall box that holds the title and grid */
+.multiassets-box {
+  background: #142929;
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+  position: relative;
+}
+
+/* Section title */
+.multiassets-title {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  font-size: 74px;
+  line-height: 90.33px;
+  width: 100%;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .multiassets-title {
+    font-size: 64px;
+  }
+}
+
+/* Grid layout for items */
+.multiassets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+ 
+}
+@media (min-width: 768px) {
+  .multiassets-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Each grid item */
+.multiassets-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  background: inherit;
+}
+
+/* Card title */
+.multiassets-card > h2 {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 32.33px;
+ 
+}
+
+/* Card styling */
+.multiassets-card {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #3B8F6E;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out;
+  flex-shrink: 0;
+  gap: 5px;
+}
+@media (min-width: 768px) {
+  .multiassets-card {
+    height: 89px;
+    font-size: 24px;
+  }
+}
+
+
+/* Dropdown icon styling */
+.dropdown-icon {
+  font-size: 24px;
+  transition: transform 0.4s ease-in-out;
+}
+@media (min-width: 768px) {
+  .dropdown-icon {
+    font-size: 32px;
+  }
+}
+
+/* Expand the icon when hovering */
+.multiassets-item:hover .dropdown-icon {
+  transform: rotate(180deg);
+}
+
+/* Details section that expands on hover */
+.multiassets-details {
+  width: 100%;
+  text-align: start; /* Align content to the left */
+  background: rgba(63, 154, 118, 0.2);
+  color: white;
+  font-size: 16px;
+  padding: 0 16px;
+  
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.6s ease-in-out, opacity 0.6s ease-in-out, padding 0.6s ease-in-out;
+}
+
+/* Show details on hover */
+.multiassets-item:hover .multiassets-details {
+  max-height: 150px;
+  padding: 16px;
+  opacity: 1;
+}
+
+/* List styling */
+.details-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+ 
+}
+.details-list li {
+  display: flex;  
+  font-family: "Radio Canada Big", sans-serif;
+  font-weight: 400;
+  color: white;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 4px 0; /* Small gap between list items */
+}
+.background-eclipse {
+  background-image: url('./Images/Ellipse\ 1\ \(1\).svg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media (min-width: 768px) {
+  .background-eclipse {
+    background-image: url('./Images/Ellipse\ 1.svg');
+    
+  }
+}
+
+@media (min-width: 768px) {
+  .footer-eclipse {
+    background-image: url('./Images/BG\ Image.svg');
+    background-size: cover;
+    background-position: center; 
+  }
+}

@@ -1,0 +1,162 @@
+.features-container {
+  width: 88%;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+
+.feature-section {
+  margin-bottom: 30px;
+  display: flex;
+}
+.image-expert{
+  width: 500px;
+}
+.feature-section h2 {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #3b8f6e;
+  font-size: 42px;
+  line-height: 1.2;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+ul li {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.feature-section p {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #555;
+}
+
+.feature-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.feature-text {
+  width: 50%;
+}
+
+.feature-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.feature-item {
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 15px;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.feature-item:hover {
+  background: #f0f0f0;
+}
+
+.tooltip {
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: normal;
+  max-width: 200px;
+  text-align: center;
+  z-index: 100;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 1024px) {
+  .features-container {
+    padding: 15px;
+  }
+
+  .feature-section h2 {
+    font-size: 28px;
+  }
+
+  ul li {
+    font-size: 18px;
+  }
+
+  .tooltip {
+    font-size: 12px;
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .feature-text, .feature-image {
+    width: 100%;
+  }
+
+  .feature-section h2 {
+    font-size: 24px;
+  }
+
+  ul li {
+    font-size: 16px;
+  }
+
+  .tooltip {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-container {
+    padding: 10px;
+  }
+
+  .feature-section h2 {
+    font-size: 20px;
+  }
+
+  ul li {
+    font-size: 14px;
+  }
+
+  .feature-image img {
+    width: 100%;
+    height: auto;
+  }
+}

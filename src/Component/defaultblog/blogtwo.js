@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
-import Header from '../splite/header'
-import Footer from '../splite/footer'
+import Header from '../home/Navbar'
+import Footer from '../home/Footer'
+import './blogpage.css'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendar, faComment, faTag } from '@fortawesome/free-solid-svg-icons';
 const Blogtwo = () => {

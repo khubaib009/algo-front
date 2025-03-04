@@ -1,0 +1,45 @@
+.container {
+    
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: #F4FFFB;
+    border-radius: 12px;
+    
+    
+  }
+  .service-container{
+    width: 85%;
+    margin: 0 auto;
+  }
+  h1 {
+    margin-bottom: 10px;
+    font-family: "Gayathri", sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 52px;
+
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #00796b !important;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #00574b;
+  }
+  

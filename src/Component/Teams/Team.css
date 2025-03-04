@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boldme{
+    font-weight: bolder !important;
+}
+
+.team-header {
+    margin-top: 40px!important;
+    position: relative;
+    width: 95%;
+    text-align: center;
+    margin-top: -10%;
+    
+    /* background-color: white; */
+    border-radius:12px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+    align-items: center;
+}
+.textcolo2{
+    width: auto;
+    padding: 20px;
+    border-radius:7px;
+    font-family: 'Gayathri', sans-serif!important;
+    
+
+}
+.textcolo{
+
+    background-color: #F4FFFB !important;
+    color: #3B8F6E !important;
+    width:auto;
+    padding: 19px;
+    border-radius:7px;
+    font-family: 'Gayathri', sans-serif!important;
+
+}.textcolo1{
+
+    background-color: #F4FFFB !important;
+    color: #3B8F6E !important;
+    width:auto;
+    padding: 19px;
+    border-radius:7px;
+    font-family: 'Gayathri', sans-serif!important;
+
+}
+.ceo-header {
+    
+    margin-top: 30px!important;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    
+    
+}
+.ceo-header2 {
+    position: relative;
+    width: 95%;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    /* background-color: #78a091; */
+
+}
+
+/* .team-header::before {
+   
+} */
+
+.ceo-items {
+    margin: 30px;
+    height: auto;
+    width: 300px;
+    background-image: linear-gradient(to right, #3b8f6e, #194136);
+    border-radius:12px;
+    box-shadow: 0 4px 8px rgba(20, 20, 20, 0.874);
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 90px;
+    font-family:'Radio Canada Big';
+
+}
+
+.team-items {
+    height: auto;
+    background-image: linear-gradient(to right, #3b8f6e, #194136);
+    border-radius:12px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(20, 20, 20, 0.874);
+    margin-left:15px;
+    margin-right:15px;
+    margin-bottom: 30px;
+    margin-top: 90px;
+    font-family:'Radio Canada Big';
+
+}
+
+.ceo-member img {
+    border: white 3px solid;
+    height: 50%;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -25%;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.ceo-member images
+{
+    width: 100px;
+}
+.team-member img {
+    border: white 3px solid;
+    height: 50%;
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -25%;
+    margin-left: 25%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-info {
+    text-align: center;
+    padding: 15px;
+}
+
+.member-info h3 {
+    margin: 10px 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.member-info span {
+    display: block;
+    color: white;
+    font-size: 16px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icon a:hover i.fab.fa-linkedin {
+    color: #0077b5; /* LinkedIn color on hover */
+}
+
+.social-icon a:hover i.fab.fa-twitter {
+    color: #1da1f2; /* Twitter color on hover */
+}
+
+.social-icon a:hover i.fab.fa-instagram {
+    color: #e4405f; /* Instagram color on hover */
+}
+
+@media (max-width: 1400px) {
+    .ceo-items {
+        margin-top: 15%;
+    }
+    .team-items {
+        margin-top: 15%;
+    }
+
+    .team-header {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: -1%;
+        margin-bottom: 20px;
+    }
+    .ceo-header {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: -1%;
+        margin-bottom: 20px;
+    }
+    .ceo-header2 {
+        
+        position: relative;
+        width: 100%;
+        text-align: center;
+        margin-top: -1%;
+        margin-bottom: 20px;
+    }
+
+    .team-header::before {
+       
+    }
+}
+
+@media (min-width:1000px) and (max-width:1400px) {
+    .ceo-items {
+        margin-top: 7%;
+    }
+    .team-items {
+        margin-top: 7%;
+    }
+}
+
+@media (min-width:768px) and (max-width:999px) {
+    .ceo-items {
+        margin-top: 10%;
+    }
+    .team-items {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width:455px) {
+    .ceo-items {
+        margin-top: 22%;
+    }
+    .team-items {
+        margin-top: 22%;
+    }
+}

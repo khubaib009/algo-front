@@ -10,7 +10,7 @@ import Line from './Images/Line 13.svg'
 
 const AboutAlgoEdge = () => {
   return (
-    <div className="relative w-[85%] mx-auto py-6">
+    <div className="relative w-[85%] mx-auto py-20">
       {/* About Section */}
       <div className="flex flex-col md:flex-row justify-between md:items-center md:items-start space-y-6 md:space-y-0 relative !important">
           {/* About AlgoEdge Title */}

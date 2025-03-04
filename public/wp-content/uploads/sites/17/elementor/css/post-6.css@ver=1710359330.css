@@ -173,7 +173,10 @@
     letter-spacing: var(--e-global-typography-84ca66e-letter-spacing);
     word-spacing: var(--e-global-typography-84ca66e-word-spacing);
 }
-
+.elementor-kit-6 p{
+    line-height: var(--e-global-typography-84ca66e-line-height);
+    padding: 0px;
+}
 .elementor-kit-6 button,
 .elementor-kit-6 input[type="button"],
 .elementor-kit-6 input[type="submit"],
@@ -457,8 +460,8 @@ h1.entry-title {
         line-height: var(--e-global-typography-accent-line-height);
         letter-spacing: var(--e-global-typography-accent-letter-spacing);
         background-color: transparent;
-        background-image:linear-gradient(to right, #3b8f6e, #194136);
-        background-image: linear-gradient(140deg, var(--e-global-color-d49ac81) 30%, var(--e-global-color-332724a) 85%);
+        /* background-image:linear-gradient(to right, #3b8f6e, #194136); */
+        /* background-image: linear-gradient(140deg, var(--e-global-color-d49ac81) 30%, var(--e-global-color-332724a) 85%); */
     }
 
     .elementor-kit-6 label {
@@ -484,4 +487,5 @@ h1.entry-title {
     .e-con {
         --container-max-width: 767px;
     }
+    .
 }

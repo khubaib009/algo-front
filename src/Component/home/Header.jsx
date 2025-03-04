@@ -2,8 +2,7 @@ import React from "react";
 import polygon1 from "./Images/Polygon 1.svg";
 import polygon2 from "./Images/Polygon 2.svg";
 import polygon3 from "./Images/Polygon 3.svg";
-import map from "./Images/Map.svg";
-import { Link } from "react-scroll"; 
+import map from "./Images/Map.svg"; 
 import "./Header.css"; // Link to your CSS file
 
 const Header = () => {
@@ -25,8 +24,8 @@ const Header = () => {
             quantitative solutions that optimize trading, risk management, and
             portfolio performance.
           </p>
-          <button className="header-button">
-            <Link to="contact" smooth={true} duration={500} className="menu-link">Contact us</Link></button>
+          {/* <button className="header-button">
+            <Link to="contact" smooth={true} duration={500} className="menu-link">Contact us</Link></button> */}
         </div>
 
         {/* Map Section */}

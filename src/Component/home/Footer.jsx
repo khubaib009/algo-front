@@ -1,100 +1,90 @@
-import React from "react";
-import line from './Images/Line 4.png';
-import footerlogo from './Images/Footer-Icon.svg';
-import location from './Images/Location (2).svg';
-import email from './Images/Email-Icon.svg';
-import phone from './Images/Layer_1.svg';
-import linkedIN from './Images/LinkedIN.svg';
-import { Link, useNavigate, useLocation } from "react-router-dom";
-import './PerformanceS.css'
+import React from 'react';
+import { FaLinkedin, FaYoutube, FaTimes } from 'react-icons/fa';
+import './Footer.css'; // Link to your CSS file
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="relative bg-[#001f1e] text-white py-12 footer-eclipse">
-      {/* Left Section: Logo and Description */}
-      <div className="max-w-[90%] md:max-w-[85%] mx-auto mb-8">
-        <div className="flex gap-4 items-center justify-center md:justify-start md:text-left text-center">
-          <img src={footerlogo} alt="footer-logo" className="footer-logo w-10 h-10" />
-          <h1 className="md:text-left text-[29.95px] font-['Roboto Mono'] font-500">AlgoEdge</h1>
-        </div>
-        <div className="flex flex-col md:flex-row gap-4 items-center justify-between">
-          <p className="text-[14px] md:text-[16px] md:ml-0 ml-2 md:[400px] md:w-[400px] font-['radio canada big'] text-[14px] md:text-[16px] mt-4 text-[#a2a9a9] font-medium">
-            Providing advanced quantitative and algorithmic strategies to
-            investment managers and HNIs.
-          </p>
-          <a href="https://www.linkedin.com/company/algoedge-cad/people/" target="_blank" rel="noopener noreferrer">
-            <img src={linkedIN} alt="LinkedIn" className="md:mb-8 mt-2 md:mt-0" />
-          </a>
-        </div>
-        
-      </div>
-      <img src={line} alt="alt" className="mb-6 mt-6 w-full md:w-auto" />
-      <img src={line} alt="alt" className="absolute hidden mt-[45px] md:block" />
-      {/* Center Section: Navigation Links */}
-      <div className="flex flex-row md:block gap-2 max-w-[85%] mx-auto">
-  
-          <div className="flex flex-col md:flex-row gap-4 max-w-[60%] md:max-w-[60%]">
-            <h2 className="text-[14px] md:text-[16px] font-semibold text-[#ffffff]">Company</h2>
-            <ul className="flex flex-col md:flex-row gap-2 md:gap-8 font-['Radio Canada Big'] md:text-[16px] font-normal text-[14px] md:text-left">
-              <li>
-                <a href="/home" className="md:mb-0 hover:text-green-500 text-[#a2a9a9]">
-                  Home
-                </a>
-              </li>
-               <li>
-                  <Link to="/strategies" className="hover:text-green-500 text-[#a2a9a9]">
-                    Strategies
-                  </Link>
-                </li>
-              <li> 
-                <Link to="/Institutional_Investors" className="hover:text-green-500 text-[#a2a9a9]">
-                  Institutional Investors
-                </Link>
-              </li>
-              <li>
-                <Link to="/team" className="hover:text-green-500 text-[#a2a9a9]">
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="hover:text-green-500 text-[#a2a9a9]">
-                  Blog
-                </Link>
-                
-              </li>
-            </ul>
+    <footer className="footer footer-eclipse">
+      <div className="footer-container">
+        {/* Newsletter Section */}
+        <div className="newsletter-section">
+          <div>
+            <h2 className="newsletter-title">Join our newsletter</h2>
+            <p className="newsletter-text">We care about your data in our privacy policy.</p>
           </div>
-
+            
          
+          <button className="logins-btn">
+            Subscribe Us
+            </button>
+        </div>
 
-          {/* Right Section: Contact Details */}
-          <div className="flex flex-col md:flex-row gap-4 md:mt-[50px] max-w-[45%] md:max-w-[80%] ">
-            <h2 className="text-[14px] md:text-[16px] font-semibold text-[#ffffff] font-semibold md:text-center md:text-left">Get in Touch</h2>
-            <ul className="flex flex-col md:flex-row gap-2 md:gap-8 font-['Radio Canada Big'] md:text-[16px] font-normal text-[14px]">
-              <li className="flex items-center gap-2 flex-wrap">
-                <img src={location} alt="capa2" className="w-4 h-4" />
-                <p className="text-[#a2a9a9]">Delaware, US</p>
-              </li>
-              <li className="flex items-center gap-2 flex-wrap">
-                <img src={email} alt="capa2" className="w-4 h-4" />
-                <p className="text-[#a2a9a9]">info@algoedge.io</p>
-              </li>
-              <li className="flex items-center gap-2 flex-wrap">
-                <img src={phone} alt="capa2" className="w-4 h-4" />
-                <a href="tel:+15878798880" className="hover:text-green-500">
-                  <p className="text-[#a2a9a9]">(587)879-8880</p>
-                </a>
-              </li>
-            </ul>
+        {/* Footer Main Content */}
+        <div className="footer-main">
+          {/* Company Info Section */}
+          <div className="footer-section company-info">
+            <h2 className="footer-title">ALGOEDGE</h2>
+            <p className="footer-text">
+              AlgoEdge is a pioneering quantitative research firm at the forefront of high-performance algorithmic trading. We leverage cutting-edge technology to demystify the financial markets, making quantitative strategies accessible to all investment managers.
+            </p>
+          </div>
+          <div className="footer-menu">
+          {/* Solutions Section */}
+            <div className="footer-section">
+              <h3 className="section-title">Solutions</h3>
+              <ul className="footer-list">
+                <li>Invest Through Our Global Partners</li>
+                <li>License our Strategies</li>
+                <li>Quant as a Service</li>
+              </ul>
+            </div>
+
+            {/* Company Section */}
+            <div className="footer-section">
+             
+                <h3 className="section-title">Company</h3>
+              
+              <ul className="footer-list">
+                <li>News & Insights</li>
+                  <Link to="/team" className="menu-link">
+                <li>About Us</li>
+                </Link>
+                <Link to="/contact" className="menu-link">
+                  <li>Contact</li>
+                </Link>
+                <Link to="/Investment-Products" className="menu-link">
+                  <li>Investment Products</li>
+                </Link>
+                <li>Terms of Use</li>
+                <li>Privacy Policy</li>
+              </ul>
+            </div>
+
+            {/* Contact Us Section */}
+            <div className="footer-section contact-info">
+              <h3 className="section-title">Contact Us</h3>
+              <p className="footer-text">
+                Delaware, US </p>
+               <p className="footer-text"><a href=" info@algoedge.io" className="footer-link"> info@algoedge.io</a></p> 
+                <p className="footer-text">(587)879-8880</p>
+              
+            </div>
           </div>
         </div>
-      
-      <img src={line} alt="alt" className="mb-6 mt-6 w-full md:w-auto" />
 
-      {/* Bottom Section */}
-      <div className="max-w-[90%] md:max-w-[85%] mx-auto font-['Radio Canada Big'] md:text-[16px] text-[16px] font-medium mt-8 pt-4 text-sm text-[#a2a9a9]">
-        <p>Copyright © 2024 AlgoEdge, All rights reserved.</p>
+        {/* Footer Bottom Section */}
+        <div className="footer-bottom">
+          <span>Copyright© 2024 Algoedge, All rights reserved.</span>
+          <div className="footer-icons">
+          <a href="https://www.linkedin.com/company/algoedge-cad/people/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="icon" />
+          </a>
+
+          </div>
+        </div>
       </div>
+      <div className="footer-border"></div>
     </footer>
   );
 };

@@ -1,0 +1,39 @@
+
+.custom-container{
+    background-color: #142929 !important;
+}
+p{
+    color:grey!important;
+    font-size: 14px;
+    padding: 20px;
+}
+h4{
+    font-weight: 900;
+    padding: 12px;
+}
+.elementor{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    padding-bottom: 0;
+}
+
+.background-eclipse {
+    
+    background-size: cover;
+    background-position: center;
+  }
+  .header-button{
+    background-color: #3b8f6e !important;
+    padding: 15px 30px;
+    border-radius: 50px !important;
+  }
+  
+  .attachment-full{
+    height: 250px !important;
+  }
+  .elementor-16 {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  

@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import { Link, useNavigate, useLocation } from "react-router-dom"; // Added useNavigate and useLocation
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"; // For smooth scrolling
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import logo from "./Images/logo-icon.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const navigate = useNavigate(); // For navigation
-  const location = useLocation(); // Get current URL path
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // Track whether we're on a mobile viewport (below 1030px)
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 1030);
 
-  const handleContactClick = () => {
-    if (location.pathname === "/") {
-      // If already on the home page, just scroll to contact
-      scroll.scrollTo(document.getElementById("contact").offsetTop, {
-        duration: 500,
-        smooth: "easeInOutQuad",
-      });
-    } else {
-      // Navigate to home first, then scroll to contact after the page loads
-      navigate("/");
-      setTimeout(() => {
-        scroll.scrollTo(document.getElementById("contact").offsetTop, {
-          duration: 500,
-          smooth: "easeInOutQuad",
-        });
-      }, 500); // Delay scrolling to ensure page has loaded
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1030);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
+
+  // Close menu and dropdown only if we're on mobile
+  const closeMenu = () => {
+    if (isMobile) {
+      setIsMenuOpen(false);
+      setIsDropdownOpen(false);
     }
   };
 
@@ -33,7 +33,7 @@ const Navbar = () => {
       <nav className="navbar-container">
         {/* Logo Section */}
         <div className="navbar-logo">
-          <Link to="/" className="logo-link">
+          <Link to="/" className="logo-link" onClick={closeMenu}>
             <div className="logo-circle">
               <img src={logo} alt="Logo" className="logo" />
             </div>
@@ -41,7 +41,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Hamburger Menu (Visible on Mobile) */}
+        {/* Hamburger Menu (Mobile) */}
         <div className="hamburger-menu">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -72,29 +72,75 @@ const Navbar = () => {
         <div className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
           <ul className="menu-list">
             <li className="menu-item">
-              <Link to="/strategies" className="menu-link">
-                Strategies
+              <Link to="/" className="menu-link" onClick={closeMenu}>
+                Home
+              </Link>
+            </li>
+            <li className="menu-item dropdown">
+              <span
+                className="menu-link dropdown-toggle"
+                onClick={toggleDropdown}
+              >
+                Solutions
+              </span>
+              {isDropdownOpen && (
+                <div className="dropdown-card">
+                  <Link
+                    to="/finles-service"
+                    className="menu-link-1"
+                    onClick={closeMenu}
+                  >
+                    <div className="dropdown-item">
+                      <h1>Expertly Managed Funds</h1>
+                      <p className="item-description">
+                        Hands-off investment approach <br /> through AlgoEdge’s
+                        trusted global <br /> partner funds.
+                      </p>
+                    </div>
+                  </Link>
+                  <Link
+                    to="/Qaas-service"
+                    className="menu-link-1"
+                    onClick={closeMenu}
+                  >
+                    <div className="dropdown-item">
+                      <h1>Quant Trading SaaS</h1>
+                      <p className="item-description">
+                        Empower your trading operations <br /> with AlgoEdge’s
+                        Quant SaaS without the need <br /> in-house team.
+                      </p>
+                    </div>
+                  </Link>
+                </div>
+              )}
+            </li>
+            <li className="menu-item">
+              <Link
+                to="/Investment-Products"
+                className="menu-link"
+                onClick={closeMenu}
+              >
+                Investment Products
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/Institutional_Investors" className="menu-link">
-                Institutional Investors
+              <Link
+                to="/article-news"
+                className="menu-link"
+                onClick={closeMenu}
+              >
+                Article & Insights
               </Link>
             </li>
             <li className="menu-item">
-              <Link to="/team" className="menu-link">
-                Team
-              </Link>
-            </li>
-            <li className="menu-item">
-              <Link to="/blog" className="menu-link">
-                Blog
+              <Link to="/team" className="menu-link" onClick={closeMenu}>
+                About Us
               </Link>
             </li>
           </ul>
-          <button className="login-btn" onClick={handleContactClick}>
-            Contact Us
-          </button>
+          <Link to="/contact" className="menu-link" onClick={closeMenu}>
+            <button className="login-btn">Contact Us</button>
+          </Link>
         </div>
       </nav>
     </header>

@@ -4,10 +4,14 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // const Graph = React.lazy(() => import('./Component/pages/graph/graph'));
 const Homepage = React.lazy(() => import('./Component/homepage'));
 const Aboutus = React.lazy(()=> import('./Component/splite/aboutus/aboutus'))
-const Team = React.lazy(()=> import('./Component/splite/team/ourteam'))
-const Contact = React.lazy(()=> import('./Component/home/contact'))
+const Team = React.lazy(()=> import('./Component/Teams/Team'))
+const Contact = React.lazy(()=> import('./Component/contact/contact'))
 const SPStrategy = React.lazy(()=> import('./Component/splite/strategy/spstrategy'))
 const Strategy = React.lazy(()=> import('./Component/splite/strategy/Strategy'))
+const InvestmentProducts = React.lazy(()=> import('./Component/investmentproducts/Investment'))
+const Qaas = React.lazy(()=> import('./Component/Service/Qaas'))
+const Finles = React.lazy(()=> import('./Component/Finles/Finles'))
+const Article = React.lazy(()=> import('./Component/Article/Article'))
 
 const Register = React.lazy(()=> import('./Component/splite/strategyRegister/register'))
 const Blog = React.lazy(()=> import('./Component/blog/blog'))
@@ -87,18 +91,27 @@ const App = () => {
                             element={<DefaultBlog />} />
                                <Route path="/Backtesting"
                             element={<Blogtwo />} />
+                             <Route path="/qaas-service"
+                              element={<Qaas />} />
+                              <Route path="/finles-service"
+                              element={<Finles />} />
                                <Route path="/long-straddle"
                             element={<Blogthree />} />
                             <Route path="/Individual_Traders"
                             element={<B2c />} />
                             <Route path="/Institutional_Investors"
                             element={<B2b />} />
+                            <Route path="/article-news"
+                            element={<Article />} />
+                             
                             <Route path="/Strategies"
                             element={<Strategy />} />
                                <Route path="/Data-Innovation"
                             element={<DataInnovation />} />
                               <Route path="/sp-strategy"
                             element={<SPStrategy />} />
+                            <Route path="/Investment-Products"
+                            element={<InvestmentProducts />} />
                               <Route path="/Equities-2"
                             element={<Equities2 />} />
                                <Route path="/Crypto_Trend_Capturing"

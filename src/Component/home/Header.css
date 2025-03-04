@@ -31,7 +31,7 @@
 }
 
 .header-content {
-  width: 83%;
+  width: 87%;
   margin: 0 auto;
   padding-top: 80px;
   text-align: center;
@@ -59,12 +59,13 @@
 
 .header-description {
   font-size: 16px;
+  font-family: "Radio Canada Big", sans-serif;
   color: #142929;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 30px;
   line-height: 1.6;
   text-align: center;
-  width: 100%;
+  width: 75%;
   box-sizing: border-box;
 }
 
@@ -114,12 +115,13 @@
   }
 
   .map-image {
-    width: 80%;
+    width: 87%;
   }
 
   .header-button {
     padding: 15px 25px;
     font-size: 14px;
+    background-color: #3b8f6e !important;
   }
 }
 
@@ -140,7 +142,10 @@
   }
 
   .map-image {
-    width: 60%;
+    width: 87%;
+  }
+  .header-button {
+    background-color: #3b8f6e !important;
   }
 }
 
@@ -157,5 +162,8 @@
 
   .map-image {
     width: 85%;
+  }
+  .header-button {
+    background-color: #3b8f6e !important;
   }
 }

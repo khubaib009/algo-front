@@ -1,0 +1,84 @@
+.numbers-container {
+  width: 87%;
+  margin: 0 auto;
+  display: flex;
+  background-color: #F4FFFB;
+}
+.numbers{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.numbers :nth-child(1){
+  margin-top: 6px;
+}
+.numbers-text {
+  max-width: 550px;
+  padding: 40px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  
+}
+.numbers-item{
+  margin-bottom: 15px;
+  padding: 20px;
+}
+.numbers-text h1 {
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+  margin: 0 auto; /* Centers the heading */
+  font-size: 50px;
+  line-height: 62.33px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.numbers-text p {
+  font-size: 16px;
+  color: #444;
+}
+
+.numbers-box {
+  width: 600px;
+  background-color: #142929;
+ 
+}
+
+.numbers-item h2 {
+  font-family: "Gayathri", sans-serif;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.numbers-item p {
+  padding: 0 !important;
+  color: white ;
+  font-size: 16px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid whitesmoke;
+  margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+  .numbers-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .numbers-text {
+    max-width: 100%;
+  }
+
+  .numbers-box {
+    width: 100%;
+  }
+}
