@@ -16,10 +16,9 @@ const Strategy = () => {
         <div className="strategy-content">
           {/* Top Section */}
           <div className="top-section">
-          <div className="vertical-line"></div>
             <div className="top-text">
-              
-              <div className="heading-content">
+              <div className="vertical-line"></div>
+              <div className="heading-content"> 
                 <h1 >
                   Access AlgoEdge's<br/> High-Performing & <br/>
                   <span className="highlight-heading">
@@ -28,11 +27,10 @@ const Strategy = () => {
                   </span>
                 </h1>
               </div>
-              <div className="top-image">
+            </div>
+            <div className="top-image">
               <img src={greenicon} alt="green-icon" className="green-icon" />
             </div>
-            </div>
-           
           </div>
           {/* Subheading Section */}
           <div className="subheading">
@@ -40,6 +38,7 @@ const Strategy = () => {
           </div>
           {/* Center Content */}
           <div className="center-content">
+            <div className="center-contents">
             <h1 className="investment-title">
               For Investment Managers And{' '}
               <span className="investment-hni">HNIs</span>
@@ -47,8 +46,8 @@ const Strategy = () => {
             <p className="investment-subtitle">
               Access AlgoEdge's High-Performing Strategies.
             </p>
-          </div>
-          <div className="center-contents">
+            
+            <div className="center-contents">
             <div className="investment-text">
               
               <div className="strategy-options">
@@ -64,7 +63,7 @@ const Strategy = () => {
                         <p className="option-text-left">
                           For clients without infrastructure who prefer a fully managed solution.
                         </p>
-                        <button className="strategy-button">More</button>
+                        <button className="strategy-button-1">More</button>
                       </div>
                     </div>
                     
@@ -76,10 +75,10 @@ const Strategy = () => {
                       <div className="option right-option">
 
                         <h3 className="option-title-right">
-                         Invest Through Our Global Partners
+                         License Our Strategies Via APIs
                         </h3>
                         <p className="option-text-right">
-                         For clients without infrastructure who prefer a fully managed solution.
+                        For clients with their own infrastructure, receive real-time trading signals via APIs,and execute yourself.
                         </p>
                         <button className="strategy-button">More</button>
                       </div>
@@ -88,31 +87,15 @@ const Strategy = () => {
                     
                   </div>
                 </div>
-                <div className="api-content">
-                {/* <div className="option left-option">
-                  
-                  <h3 className="option-title-left">
-                    Invest Through Our Global Partners
-                  </h3>
-                  <p className="option-text-left">
-                    For clients without infrastructure who prefer a fully managed solution.
-                  </p>
-                  <button className="strategy-button">More</button>
-                </div> */}
-                {/* <div className="option right-option">
-                  <h3 className="option-title-right">
-                    License Our Strategies Via APIs
-                  </h3>
-                  <p className="option-text-right">
-                    For clients with their own infrastructure, receive real-time trading signals via APIs, and execute yourself.
-                  </p>
-                  <button className="strategy-button-1">More</button>
-                </div> */}
-                </div>
+               
               </div>
             </div>
-            <div className="vertical-divider"></div>
+            {/* <div className="vertical-divider"></div> */}
           </div>
+            </div>
+          <div className="vertical-line-1"></div>
+          </div>
+          
         </div>
         <img src={polygon5} alt="polygon-4" className="polygon" />
       </section>

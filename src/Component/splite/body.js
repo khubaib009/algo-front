@@ -3,10 +3,8 @@ import Navbar from '../home/Navbar'
 import Header from '../home/Header'
 import Startegy from '../home/Strategy'
 import Multiassests from '../home/Multiassets'
-
 import Footer from '../home/Footer'
 import Number from '../home/Number'
-
 import Logo from '../home/Logos'
 import Schedule from '../home/Schedule'
 import '../../index.css'
@@ -24,14 +22,14 @@ const Body = () => {
       {/* <Logo /> */}
       {/* <Performance /> */}
       <Startegy />
-      {/* <Number />
-      <Multiassests /> */}
+      <Number />
+      <Multiassests />
       
-      {/* <Schedule />  */}
+      <Schedule /> 
       
       {/* <ContactForm /> */}
-      {/* <DefaultBlog />
-      <Footer /> */}
+      <DefaultBlog />
+      <Footer />
 
         </div>
   )

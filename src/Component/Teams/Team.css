@@ -39,9 +39,19 @@ body {
     padding: 20px;
     border-radius:7px;
     font-family: 'Gayathri', sans-serif!important;
+    
 
 }
 .textcolo{
+
+    background-color: #F4FFFB !important;
+    color: #3B8F6E !important;
+    width:auto;
+    padding: 19px;
+    border-radius:7px;
+    font-family: 'Gayathri', sans-serif!important;
+
+}.textcolo1{
 
     background-color: #F4FFFB !important;
     color: #3B8F6E !important;

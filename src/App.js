@@ -11,6 +11,7 @@ const Strategy = React.lazy(()=> import('./Component/splite/strategy/Strategy'))
 const InvestmentProducts = React.lazy(()=> import('./Component/investmentproducts/Investment'))
 const Qaas = React.lazy(()=> import('./Component/Service/Qaas'))
 const Finles = React.lazy(()=> import('./Component/Finles/Finles'))
+const Article = React.lazy(()=> import('./Component/Article/Article'))
 
 const Register = React.lazy(()=> import('./Component/splite/strategyRegister/register'))
 const Blog = React.lazy(()=> import('./Component/blog/blog'))
@@ -100,6 +101,8 @@ const App = () => {
                             element={<B2c />} />
                             <Route path="/Institutional_Investors"
                             element={<B2b />} />
+                            <Route path="/article-news"
+                            element={<Article />} />
                              
                             <Route path="/Strategies"
                             element={<Strategy />} />

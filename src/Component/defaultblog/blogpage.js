@@ -1,30 +1,31 @@
 import React from 'react'
 import Header from '../home/Navbar'
 import Footer from '../splite/footer'
-
-
+import  './blogpage.css'
+import { Link } from "react-router-dom";
+import Schedule from '../home/Schedule'
+import backtest from './and-machines-2yClsTFXIcE-unsplash.jpg'
 const Blogpage = () => {
   const isMobile = window.innerWidth < 600;
 
   return (
     <div>
     {/* <Header /> */}
-    <div data-elementor-type="archive" data-elementor-id={16}  className="elementor elementor-16 elementor-location-archive w-[87%]  mx-auto mt-20"   data-elementor-post-type="elementor_library" >
+    <div data-elementor-type="archive" data-elementor-id={16}  className="elementor elementor-16 elementor-location-archive mb-0 " data-elementor-post-type="elementor_library" >
       <div
-        className="elementor-element elementor-element-22b2af8b e-flex e-con-boxed e-con e-parent"
+        className="custom-container "
         data-id="22b2af8b"
         data-element_type="container"
         data-settings='{"background_background":"classic"}'
         data-core-v316-plus="true"
       >
-       <div className="e-con-inner">
-  <div className="elementor-element elementor-element-79ebda9b e-con-full e-flex e-con e-child" data-id="79ebda9b" data-element_type="container"
-    style={{
-      height: '40px', // Set the desired height
-      display: 'flex', // Use flexbox for centering
-      justifyContent: 'center', // Center horizontally
-      alignItems: 'center', // Center vertically
-    }} >
+       <div className="e-con-inner w-[95%] mx-auto">
+       <div className="elementor-element elementor-element-79ebda9b e-con-full e-flex e-con e-child"
+        style={{
+          display: 'flex',
+         
+        }}>
+
     <div className="elementor-element elementor-element-4a84a3c2 elementor-invisible elementor-widget elementor-widget-heading"
       data-id="4a84a3c2"
       data-element_type="widget"
@@ -38,7 +39,7 @@ const Blogpage = () => {
           }}
         />
         <h1 className="text-[62px] font-['gayathri'] elementor-heading-title elementor-size-default text">
-          Article &amp; News
+          Article &amp; Insights
         </h1>
       </div>
     </div>
@@ -46,7 +47,7 @@ const Blogpage = () => {
 </div>
 
       </div>
-      <div className="elementor-element elementor-element-2eaab58a e-flex e-con-boxed e-con e-parent"  data-id="2eaab58a" data-element_type="container" data-core-v316-plus="true" >
+      <div className="elementor-element w-[90%] mx-auto elementor-element-2eaab58a e-flex e-con-boxed e-con e-parent"  data-id="2eaab58a" data-element_type="container" data-core-v316-plus="true" >
         <div className="e-con-inner">
           <div className="elementor-element elementor-element-11e590bc elementor-grid-3 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-card-shadow-yes elementor-posts__hover-gradient load-more-align-center elementor-widget elementor-widget-archive-posts"
             data-id="11e590bc"
@@ -105,8 +106,8 @@ const Blogpage = () => {
                             style={{ height: '250px' }}
                             fetchpriority="high"
                             width={1280}
-                            height={687}
-                            src='/trade2.jpg'
+                            height={750}
+                            src={backtest}
                             className="attachment-full size-full wp-image-118"
                             alt="Business people, coach and stock market presentation in meeting for trading, graph and chart monito"
                             decoding="async"
@@ -180,14 +181,22 @@ option on the same underlying asset with the same expiration date and strike pri
                 </svg>{" "}
               </span>
             </div>
+              <div className="flex  justify-center mb-0">
+                
+                <button className="header-button">
+                  <Link to="/article-news">View More</Link>
+                </button>
+              </div>
+
           </div>
+         
         </div>
+       
       </div>
     </div>
     {/* <Footer /> */}
-    <div className="flex  justify-center mb-10">
-        <button className="header-button">View More</button>
-    </div>
+    
+    
   </div>
   )
 }

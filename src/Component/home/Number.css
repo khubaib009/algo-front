@@ -1,149 +1,84 @@
-.algoedge-numbers {
-  display: flex;
-  flex-direction: column;
-  width: 86%;
+.numbers-container {
+  width: 87%;
   margin: 0 auto;
-  justify-content: center;
+  display: flex;
+  background-color: #F4FFFB;
+}
+.numbers{
+  display: flex;
   align-items: center;
-  position: relative;
-  top: 40px;
+  gap: 5px;
+}
+.numbers :nth-child(1){
+  margin-top: 6px;
+}
+.numbers-text {
+  max-width: 550px;
+  padding: 40px;
   text-align: center;
-  border-radius:10px;
-  gap: 50px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   
 }
-
-/* Title section styles */
-.title-section {
-  max-width: 500PX;
-  padding-top: 60px;
-  padding-bottom: 60px;
+.numbers-item{
+  margin-bottom: 15px;
+  padding: 20px;
 }
-
-.title-section > h1 {
+.numbers-text h1 {
   font-family: "Gayathri", sans-serif;
   font-weight: 700;
-  color: #000 !important;
-  font-size: 74px !important;
-  line-height: 90px;
-  margin: 0;
-}
-
-.title-section .highlight {
-  
-  color: #3b8f6e !important;
-  font-size: 74px !important;
-  line-height: 70px;
-  margin: 0;
-}
-
-/* Stats Section */
-.stats-section {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-  margin-bottom: 20px;
-}
-
-/* Individual stat item */
-.stats-section p {
-  display: flex;
-  align-items: center;
-  text-align: left;
-  gap: 15px;
-  font-size: 16px;
-  font-family: "Radio Canada Big", sans-serif;
-  color: #000 !important;
-}
-
-/* Number styling */
-.stat-number {
-  font-weight: bold;
-  color: #fff !important;
-  background-color: #3b8f6e !important;
-  padding: 8px;
-  border-radius: 4px;
-  display: inline-block;
-  width: 36px;
+  color: #000;
   text-align: center;
-  align-self: flex-start; /* Aligns numbers to the start */
+  margin: 0 auto; /* Centers the heading */
+  font-size: 50px;
+  line-height: 62.33px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Mobile Styles */
+
+.numbers-text p {
+  font-size: 16px;
+  color: #444;
+}
+
+.numbers-box {
+  width: 600px;
+  background-color: #142929;
+ 
+}
+
+.numbers-item h2 {
+  font-family: "Gayathri", sans-serif;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.numbers-item p {
+  padding: 0 !important;
+  color: white ;
+  font-size: 16px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid whitesmoke;
+  margin: 15px 0;
+}
+
 @media (max-width: 768px) {
-  .algoedge-numbers {
-    width: 100%;
+  .numbers-container {
+    flex-direction: column;
     text-align: center;
-    gap: 30px;
-    padding: 10px;
   }
 
-  .title-section {
-    padding: 20px;
+  .numbers-text {
+    max-width: 100%;
   }
 
-  .title-section h1 {
-    font-size: 40px;
-    line-height: 50px;
-  }
-
-  .title-section .highlight {
-    font-size: 40px;
-  }
-
-  .stats-section {
-    padding: 0 10px;
-    margin-left: 60px;
-    gap: 20px;
-  }
-
-  .stats-section p {
-    font-size: 14px;
-    gap: 10px;
-  }
-
-  .stat-number {
-    width: 30px;
-    font-size: 14px;
-    
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 768px) {
-  .algoedge-numbers {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .title-section {
-    width: 50%;
-  }
-
-  .stats-section {
-    width: 50%;
-  }
-
-  .title-section h1 {
-    font-size: 52px;
-  }
-
-  .title-section .highlight {
-    font-size: 32px;
-  }
-
-  .stat-number {
-    text-align: start;
-    align-self: flex-start;
-  }
-}
-
-@media (min-width: 1024px) {
-  .title-section h1 {
-    font-size: 64px;
-  }
-
-  .title-section .highlight {
-    font-size: 40px;
+  .numbers-box {
+    width: 100%;
   }
 }

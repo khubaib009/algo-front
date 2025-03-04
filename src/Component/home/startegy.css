@@ -13,14 +13,14 @@
   width: 87%;
   background-color: #F4FFFB;
   margin: 0 auto;
-  
+  padding-bottom: 50px;
 }
 
 /* ---------- Top Section ---------- */
 .top-section {
  display: flex;
  align-items: center;
-  justify-content: center;
+justify-content: center;
  gap:30px
 }
 .top-text{
@@ -28,15 +28,19 @@
   align-items: center;
   justify-content: center;
   gap: 80px;
+  position: relative;
+}
+.heading-content{
+  display: flex;
 }
 .vertical-line {
   width: 4px;
   height: 400px; 
-  margin-left: 20px;
+  margin-left: -60px;
   background-color: #3B8F6E;
 }
 .heading-content >h1{
-  font-family: "Gayathri", sans-serif;
+  font-family: "Gayathri", sans-serif !important;
   font-weight: 700;
   color: #000;
   font-size: 60px;
@@ -51,21 +55,34 @@
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .center-content{
+  
+  display: flex;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 }
-.center-content >h1{
-  font-family: "Gayathri", sans-serif;
+.center-stag{
+  display: flex;
+  flex-direction: row;
+}
+.center-contents >h1{
+  font-family: "Gayathri", sans-serif !important;
   font-weight: 700;
   color: #000;
   font-size: 60px;
   
 }
 .investment-hni{
-  color: #3b8f6e;
+  color: #3b8f6e !important;
+  font-family: "Gayathri", sans-serif !important;
+  font-weight: 700;
+  color: #000;
+  font-size: 60px;
 }
 .investment-subtitle{
-  font-family: "Gayathri", sans-serif;
+  font-family: "Gayathri", sans-serif !important;
   font-weight: 700;
   color: #3b8f6e;
   font-size: 24px;
@@ -76,8 +93,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  margin-top: 10px;
-   
+  margin-top: -50px;
 }
 
 /* Ensure all images are positioned */
@@ -88,7 +104,7 @@
 /* Make the 1st image appear on top of the 2nd */
 .middle-images > img:nth-child(1) {
   z-index: 2;
-  margin-right: -40px; 
+   
 }
 
 
@@ -101,60 +117,402 @@
   z-index: 1;
 }
 
-.middle-images > img:nth-child(5) {
-  z-index: 2; 
-  
-}
-.image-layer{
-  padding-top: 90px;
-  margin-top:40px;
-}
-.image-layer{
-  align-items: right;
-  justify-content: right;
-}
-.api-content{
+
+.image-layer-1{
   display: flex;
-  gap: 400px;
-  align-items: center;
-  justify-content: center;
-  
+  flex-direction: column;
+  align-items: end;
+  position: relative;
+  margin-top: 190px;
 }
+.image-layer-1 > img:nth-child(1) {
+  margin-right: -40px;
+  z-index: 2;
+}
+.image-layer{
+ position: relative;
+ margin-top: 195px;
+}
+.image-layer > img:nth-child(1) {
+  margin-left: -40px;
+  z-index: 2;
+}
+
 .left-option{
-  
-  left:150px;
   text-align: right;
-  width: 250px;
-  
+  margin-top: 20px;
+  margin-right: -20px;
+  width: 320px;
 }
 .option-title-left{
+  margin-left: 100px;
   font-family: "Gayathri", sans-serif !important;
   font-weight: 700;
   font-size: 24px !important;
   
 }
 .option-text-left{
-  font-family: "Radio Canada Big", sans-serif !important;
-  color: #142929;
+  padding: 0px !important;
+  font-weight: 400 !important;
+  line-height: 24px;
+  color: #142929 !important;
   font-size: 16px !important;
-  
-  
 }
 .right-option{
-  
   text-align: left;
-  width: 250px;
-  right: 150px;
+  margin-top: 20px;
+  margin-left: -40px;
+  width: 340px;
+  
 }
 .option-title-right{
   font-family: "Gayathri", sans-serif !important;
   font-weight: 700;
   font-size: 24px !important;
-  width: 250px;
+ 
 }
 .option-text-right{
-  font-family: "Radio Canada Big" ;
-  
+  padding: 0px !important;
+  font-weight: 400 !important;
+  line-height: 24px;
+  color: #142929 !important;
   font-size: 16px !important;
-  width: 350px;
+  
+}
+.strategy-button-1{
+  background-color: #3b8f6e !important;
+  padding: 10px 30px;
+  margin-top: 28px;
+}
+
+.strategy-button{
+  background-color: #3b8f6e !important;
+  padding: 10px 30px;
+  margin-top: 10px;
+}
+.vertical-line-1 {
+  height: 500px;  /* Increase the height for visibility */
+  width: 4px;  /* Adjust the width as needed */
+  background-color: #3B8F6E;  /* Set a visible color */
+   /* Center it */
+}
+/* Default Styles - Already Provided */
+
+/* Responsive Styles */
+@media (max-width: 1199px) {
+  .strategy-content {
+    width: 87%;
+    padding-bottom: 30px;
+  }
+  .vertical-line {
+    height: 300px;
+  }
+  .top-text{
+    margin-left: -90px;
+  }
+  .heading-contents > h1 {
+    margin-left: -20px;
+    font-size: 50px !important;
+    line-height: 65px;
+  }
+  .subheading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .right-option{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: -100px;
+    width: 300px;
+  }
+  .left-option{
+    text-align: right;
+    margin-top: 20px;
+    margin-right: -100px;
+    width: 320px;
+  }
+  .option-text-right{
+    
+    font-weight: 400 !important;
+    line-height: 24px;
+    color: #142929 !important;
+    
+    
+  }
+  
+}
+
+@media (max-width: 1068px) {
+  .strategy-content {
+    width: 87%;
+    padding: 20px;
+  }
+
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .top-text{
+    display: flex;
+    align-items: left;
+    justify-items: start;
+  }
+  .vertical-line {
+    height: 400px;
+    width: 3px;
+    margin-left: 70px;
+  }
+
+ .heading-content{
+  text-align: l;
+ } 
+
+  .top-image {
+    order: 2;
+  }
+
+  .heading-content >h1{
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #000;
+    font-size: 60px;
+    line-height: 80px;
+  }
+  .center-contents > h1 {
+    font-size: 50px !important;
+    line-height: 50px;
+    text-align: right;
+  }
+
+  .investment-subtitle {
+    font-size: 44px;
+    line-height: 58px;
+    text-align: right;
+  }
+  .middle-images {
+    display: flex;
+    position: relative;
+    align-items: start;
+    justify-content: start;
+    margin-top: -50px;
+  }
+
+  .middle-images {
+    flex-direction: column;
+    
+  }
+
+  .image-layer-1,
+  .image-layer {
+    margin-left: 0;
+    align-items: start;
+  }
+
+  
+  .rectangle1, .black-icon, .rectangle2 {
+    display: none;
+  }
+  .right-option{
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 0px; 
+  }
+  .image-layer-1{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    margin-top: 100px;
+  }
+  .image-layer-1 > img:nth-child(1) {
+    margin-right: 0px;
+    z-index: 2;
+  }
+  .image-layer{
+   position: relative;
+   margin-top: 0px;
+   margin-top: 40px;
+  }
+  .image-layer > img:nth-child(1) {
+    margin-left: 0px;
+    z-index: 2;
+  }
+  
+  .left-option{
+    text-align: left;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 70%;
+  }
+  .option-title-left{
+    margin-left: 0px;
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    font-size: 40px !important;
+    
+  }
+  .option-text-left{
+    
+    color: #142929 !important;
+    font-size: 24px !important;
+    line-height: 32px;
+  }
+  .right-option{
+    text-align: left;
+    
+    margin-left: 0px;
+    width: 80%;
+    
+  }
+  .option-title-right{
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    font-size: 40px !important;
+   
+  }
+  .option-text-right{
+   
+    font-size: 24px !important;
+    line-height: 30px;
+  }
+  .strategy-button-1{
+    background-color: #3b8f6e !important;
+    padding: 20px 80px;
+    margin-top: 28px;
+  }
+  
+  .strategy-button{
+    background-color: #3b8f6e !important;
+    padding: 20px 80px;
+    margin-top: 10px;
+  }
+  .vertical-line-1 {
+    display: none;
+  }
+
+}
+@media (max-width: 788px) {
+  .top-section {
+    display: flex;
+    align-items: center;
+   justify-content: center;
+    gap:10px
+   }
+   .vertical-line {
+    width: 4px;
+    height: 200px; 
+    margin-left: 60px;
+    background-color: #3B8F6E;
+  }
+  
+ 
+   .heading-content >h1{
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #000;
+    font-size: 40px !important;
+    line-height: 52px;
+  }
+  .hi
+   .top-text{
+     display: flex;
+     align-items: start;
+     justify-content: start;
+     gap: 80px;
+     position: static;
+   }
+  .left-option{
+    text-align: left;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .option-title-left{
+    margin-left: 0px;
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    font-size: 24px !important;
+    
+  }
+  .option-text-left{
+    font-family: "Radio Canada Big", sans-serif !important;
+    color: #142929 !important;
+    font-size: 16px !important;
+    line-height: 24px;
+  }
+  .right-option{
+    text-align: left;
+    
+    margin-left: 0px;
+    width: 100%;
+    
+  }
+  .option-title-right{
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    font-size: 24px !important;
+   
+  }
+  .option-text-right{
+    font-family: "Radio Canada Big", sans-serif;
+    font-size: 16px !important;
+    line-height: 24px;
+  }
+  .strategy-button-1{
+    background-color: #3b8f6e !important;
+    padding: 20px 80px;
+    margin-top: 28px;
+  }
+  
+  .strategy-button{
+    background-color: #3b8f6e !important;
+    padding: 20px 80px;
+    margin-top: 10px;
+  }
+ 
+}
+@media (max-width: 600px){
+  .top-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    
+  }
+  .vertical-line {
+    width: 4px;
+    height: 200px; 
+    margin-left: 60px;
+    background-color: #3B8F6E;
+  }
+  
+  .heading-content >h1{
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #000;
+    font-size: 32px !important;
+    line-height: 38px;
+  }
+  .center-contents > h1{
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #000;
+    font-size: 24px !important;
+    line-height: 38px;
+  }
+  .investment-hni{
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #000;
+    font-size: 24px !important;
+    line-height: 38px;
+  }
+  .investment-subtitle{
+    font-family: "Gayathri", sans-serif !important;
+    font-weight: 700;
+    color: #3b8f6e;
+    font-size: 24px !important;
+    line-height: 38px;
+  }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Features.css"; // Importing the external CSS file
 import image1 from '../About/banner11.jpg'
+import imagge2 from './john-mcarthur-ROQzKIAdY78-unsplash.jpg'
 const Features = () => {
   
   return (
@@ -23,9 +24,13 @@ const Features = () => {
           <img src={image1} alt="Quantitative Analysis Dashboard" />
         </div>
       </section>
-        <section className="feature-section">
-            <h2>Why Choose AlgoEdge Managed Funds?</h2>
-            <ul>
+      <section className="feature-section feature-flex">
+        <div className="feature-image">
+          <img src={imagge2} alt="Quantitative Analysis Dashboard" className="image-expert"/>
+        </div>
+        <div className="feature-text">
+          <h2>Why Choose AlgoEdge Managed Funds?</h2>
+          <ul>
                 <li><strong>Expert Portfolio Management:</strong> </li>
                 <p>Benefit from a fully hands-off solution. Let our experts handle all aspects of portfolio management—from strategy implementation to performance monitoring, allowing you to focus on your broader financial goals.</p>
                 <li><strong>Fully Vetted Strategies:</strong> </li>
@@ -37,7 +42,8 @@ const Features = () => {
                 <p>Reap the benefits of our partner funds' diverse locations and gain access to a suite of systematic investment strategies across various regional markets and asset classes for maximum diversification.</p>
                 <p>Low research fees for cost-effective access to cutting-edge quantitative research.</p>
             </ul>
-        </section>
+        </div>
+      </section>
 
     </div>
   );

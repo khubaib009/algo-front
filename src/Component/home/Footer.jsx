@@ -14,7 +14,10 @@ const Footer = () => {
             <p className="newsletter-text">We care about your data in our privacy policy.</p>
           </div>
             
-          {/* <button className="newsletter-buttons"></button> */}
+         
+          <button className="logins-btn">
+            Subscribe Us
+            </button>
         </div>
 
         {/* Footer Main Content */}
@@ -77,9 +80,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/company/algoedge-cad/people/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin className="icon" />
           </a>
-            
-            <FaYoutube className="icon" />
-            <FaTimes className="icon" />
+
           </div>
         </div>
       </div>

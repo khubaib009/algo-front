@@ -7,9 +7,11 @@
 
 .feature-section {
   margin-bottom: 30px;
-  
+  display: flex;
 }
-
+.image-expert{
+  width: 500px;
+}
 .feature-section h2 {
   font-family: "Gayathri", sans-serif;
   font-weight: 700;

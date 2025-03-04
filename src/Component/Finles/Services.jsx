@@ -1,6 +1,6 @@
 import React from "react";
 import "./Servicess.css";
-
+import { Link } from "react-router-dom";
 const Services = () => {
   const scheduleMeeting = () => {
     alert("Thank you for your interest! We will contact you soon to schedule a meeting.");
@@ -19,7 +19,12 @@ const Services = () => {
           access to high-performance quant trading strategies.
 
           </p>
-          <button onClick={scheduleMeeting}>Schedule a meeting</button>
+          <Link to="/contact" className="menu-link">
+            <button >
+              Schedule a meeting
+            </button>
+          </Link>
+          
         </div>
       </div>
     </div>

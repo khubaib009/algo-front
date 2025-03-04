@@ -3,25 +3,46 @@ import "./Number.css";
 
 const AlgoEdgeNumbers = () => {
   return (
-    <div className="algoedge-numbers">
-      <div className="title-section">
-        <h1>
-          ALGOEDGE<span className="highlight"> BY THE NUMBERS</span>
-        </h1>
+    <div className="numbers-container">
+      {/* Left Section */}
+      <div className="numbers-text">
+        <h1>AlgoEdge by the Numbers</h1>
+        <p>
+         
+        </p>
       </div>
-      
-      <div className="stats-section">
-        <p>
-          <span className="stat-number">01</span> | Verified Performance of 50%+ Annual Returns
-        </p>
-       
-        <p>
-          <span className="stat-number">02</span> | Data from Over 20,000 active Traders and Algorithms
-        </p>
-        
-        <p>
-          <span className="stat-number">03</span> | 50 Years + Combined Market Experience
-        </p>
+
+      {/* Right Section */}
+      <div className="numbers-box">
+        <div className="numbers-item">
+          <div className="numbers">
+            <h2>01</h2>
+            <h2>|</h2>
+          </div>
+          <p>Verified Performance of 50%+ Annual Returns.</p>
+        </div>
+        <hr />
+        <div className="numbers-item">
+        <div className="numbers">
+            <h2>02</h2>
+            <h2>|</h2>
+          </div>
+          <p>
+          Data from Over 20,000 active Traders and
+          Algorithms.
+          </p>
+        </div>
+        <hr />
+        <div className="numbers-item">
+        <div className="numbers">
+            <h2>03</h2>
+            <h2>|</h2>
+          </div>
+          <p>
+          Data from Over 20,000 active Traders and
+          Algorithms.
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,94 @@
+.container {
+  width: 100%; /* Ensures full width */
+  max-width: 100%; /* Prevents any max width constraints */
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #F4FFFB;
+  border-radius: 12px;
+}
+
+/* Centering the service container */
+.service-container {
+  
+  width: 87%;
+  margin: 0 auto;
+ 
+}
+
+/* Heading styles */
+h1 {
+  margin-bottom: 10px;
+  font-family: "Gayathri", sans-serif;
+  font-weight: 700;
+  color: #000;
+  font-size: 52px;
+}
+
+/* Paragraph styles */
+p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Button styles */
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #00796b !important;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #00574b;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+      width: 100%; /* Ensures full width */
+      padding: 40px 10px; /* Adjust padding for small screens */
+      border-radius: 0; 
+      /* Remove border radius to fit screen properly */
+  }
+
+  h1 {
+      font-size: 36px;
+  }
+
+  p {
+      font-size: 16px;
+  }
+
+  button {
+      padding: 10px 20px;
+      font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+      width: 100%;
+      padding: 40px 3%;
+      border-radius: 0; /* Ensures no clipping on small devices */
+  }
+
+  h1 {
+      font-size: 28px;
+  }
+
+  p {
+      font-size: 14px;
+  }
+
+  button {
+      padding: 8px 18px;
+      font-size: 14px;
+  }
+}

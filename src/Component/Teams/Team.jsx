@@ -3,7 +3,7 @@ import './Team.css';
 import Footer from '../home/Footer';
 import Navbar from '../home/Navbar';
 import kunal from '../home/Images/KunalDhawan.jpeg'
-import Nishanth from '../home/Images/NishantKalia.jpeg'
+
 import Abishek from '../home/Images/abishake.jpeg'
 import viney from '../home/Images/viney1.jpeg'
 import satvik from '../home/Images/Satvik.jpg'
@@ -32,16 +32,7 @@ const founder = {
 const teamMembers = [
  
   // Duplicate for demonstration; ideally, you'd map over different data
-  {
-    name: 'Nishant Kalia',
-    role: 'Macro Quant Advisor',
-    img: Nishanth,
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      instagram: '#'
-    }
-  },
+
   {
     name: 'Abhishek Singh',
     role: 'Crypto Lead',
@@ -72,26 +63,8 @@ const teamMembers = [
       instagram: '#'
     }
   },
-  {
-    name: 'Keshav Todi',
-    role: 'Crypto',
-    img: keshav,
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      instagram: '#'
-    }
-  },
-  {
-    name: 'Aditya Anand',
-    role: 'Derivatives',
-    img: Aaditya,
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      instagram: '#'
-    }
-  }
+ 
+  
 ];
 
 const legals = [
@@ -107,16 +80,7 @@ const legals = [
       instagram: '#'
     }
   },
-  {
-    name: 'Badri Venkataraman',
-    role: 'Project Manager',
-    img: Badri,
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      instagram: '#'
-    }
-  },
+ 
   {
     name: 'Jean-Luc Choufani',
     role: 'Director - Americas',
@@ -127,16 +91,7 @@ const legals = [
       instagram: '#'
     }
   },
-  {
-    name: 'Vineet Kaushal',
-    role: 'Legal Advisor',
-    img: Vineeth,
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      instagram: '#'
-    }
-  },
+  
   {
     name: 'Sahil',
     role: 'Director - APAC',
@@ -147,16 +102,7 @@ const legals = [
       instagram: '#'
     }
   },
-  {
-    name: 'Muazzim Hussain',
-    role: 'Developer',
-    img: Muzammin,
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      instagram: '#'
-    }
-  }
+ 
 ];
 
 
@@ -194,8 +140,8 @@ const Team = () => {
       </div>
       <div className="ceo-header2">
       
-        <h2 className='textcolo'  style={{ marginTop:"20px", fontSize: '36px', color: 'white' }}>Founder</h2>
-      </div>
+        <h2 className='textcolo1'  style={{ marginTop:"20px", fontSize: '36px', color: 'white' }}>Meet Our Founder & Quantitative Team</h2>
+     </div>
       
        {/* Render Founder First */}
        <div className="ceo-items founder">
@@ -218,10 +164,11 @@ const Team = () => {
           </div>
         </div>
       </div>
+     
      {/* Team */}
-      <div className="team-header">
+      {/* <div className="team-header">
         <h2 className='textcolo'  style={{ fontSize: '36px', marginTop:"8px", fontWeight: 'bold', color: 'white' }}>Quantitative Team</h2>
-      </div>
+      </div> */}
       
       {teamMembers.map((member, index) => (
         <div className="team-items" key={index}>
@@ -248,7 +195,7 @@ const Team = () => {
       ))}
 {/* Legal & Business Development */}
 <div className="team-header">
-        <h2 className='textcolo'  style={{ fontSize: '36px', marginTop:"8px", fontWeight: 'bold', color: 'white' }}>Legal & Business Development</h2>
+        <h2 className='textcolo'  style={{ fontSize: '36px', marginTop:"8px", fontWeight: 'bold', color: 'white' }}>Legal, Advisory Board & Business Development</h2>
       </div>
       
       {legals.map((member, index) => (
@@ -276,9 +223,9 @@ const Team = () => {
 
 
 {/* Advisory Board  */}
-<div className="team-header">
+{/* <div className="team-header">
         <h2 className='textcolo'  style={{ fontSize: '36px', marginTop:"8px", fontWeight: 'bold', color: 'white' }}>Advisory Board</h2>
-      </div>
+      </div> */}
       
       {Advisory.map((member, index) => (
         <div className="team-items" key={index}>

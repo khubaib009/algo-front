@@ -1,10 +1,210 @@
-/* This class controls the hover effect for descriptions */
-.group:hover .group-hover\:block {
+.research-container {
+  position: relative;
+  margin-top: 50px;
+}
+
+.polygon-image {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .polygon-image {
     display: block;
+    position: absolute;
+    left: 10px;
+    bottom: 100px;
   }
-  
-  /* Initially hide descriptions */
-  .group-hover\:block {
-    display: none;
+}
+
+.content-box {
+  max-width: 87%;
+  margin: 0 auto;
+  background-color: #f4fffb;
+  padding: 50px 20px;
+}
+
+.main-title,
+.sub-title {
+  font-size: 50px !important;
+  font-family: "Gayathri", sans-serif !important;
+  font-weight: bold;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.sub-title {
+  color: #3b8f6e !important;
+}
+
+.steps-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Step Card */
+.step-card {
+  position: relative;
+  min-height: 100px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #e4e4e4;
+  background-color: #f4fffb;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1); /* Slower & smoother */
+}
+
+/* Expanded card on hover */
+.step-card.expanded {
+  height: unset;
+  background-color: white;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Step Header */
+.step-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 1s ease-in-out; /* Smoother */
+}
+
+.step-card.expanded .step-header {
+  transform: translateY(-5px);
+}
+
+/* Vertical Line */
+.vertical-liner {
+  width: 2px;
+  height: 20px;
+  background-color: #000;
+}
+
+/* Step Number */
+.step-number {
+  font-family: "Gayathri", sans-serif !important;
+  font-size: 20px !important;
+  font-weight: bold;
+  color: #142929;
+  margin-top: 8px;
+}
+
+/* Step Title */
+.step-title {
+  font-size: 20px;
+  font-family: "Gayathri", sans-serif !important;
+  font-weight: 700;
+  color: #142929;
+  margin-top: 8px;
+}
+
+/* Dynamic Step Icon */
+.step-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  background-color: #3b8f6e;
+  width: 10%;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1); /* Slower effect */
+}
+
+/* Adjust icon size inside */
+.icon-size {
+  width: 50%;
+  height: 50%;
+}
+
+/* Smooth hover effect */
+.step-card.expanded .step-icon {
+  opacity: 1;
+  transform: translateY(-50%) scale(1.2);
+}
+
+/* Step Description */
+.step-description {
+  font-size: 14px;
+  color: #142929;
+  width: 85%;
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 1.5s ease-in-out, max-height 1.2s ease-in-out; /* Slower fade-in */
+  overflow: hidden;
+}
+
+/* Show description when expanded */
+.step-card.expanded .step-description {
+  opacity: 1;
+  max-height: 300px;
+}
+@media screen and (max-width: 768px) {
+  .content-box {
+    padding: 30px 15px;
+    max-width: 95%;
   }
-  
+
+  .main-title {
+    font-size: 32px !important;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .sub-title {
+    font-size: 24px !important;
+    margin-left: 0;
+  }
+
+  .steps-container {
+    gap: 15px;
+  }
+
+  .step-card {
+    min-height: 80px;
+    padding: 20px;
+  }
+
+  .step-header {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .step-title {
+    font-size: 18px;
+  }
+
+  .step-icon {
+    width: 70px;  /* Fixed size for better scaling */
+    height: 100%;
+    position: absolute;
+    background-color: #3b8f6e;
+    margin-right: -5px;
+     /* Adjust position */
+    border-radius: 0;
+    transform: none; /* Remove hover scaling */
+    opacity: 0; /* Ensure visibility */
+  }
+
+  .icon-size {
+    width: 60%; /* Ensure it fits inside */
+    height: auto;
+  }
+
+  .step-description {
+    font-size: 12px;
+    width: 80%;
+    max-height: unset; /* Ensure it shows properly */
+  }
+}
+

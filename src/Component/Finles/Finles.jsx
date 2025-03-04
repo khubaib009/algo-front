@@ -4,6 +4,7 @@ import Services from './Services'
 import Footer from '../home/Footer'
 import Blog from '../defaultblog/blogpage'
 import Features from './Features'
+import Schedule from '../home/Schedule'
 
 const Finles = () => {
   return (
@@ -12,6 +13,7 @@ const Finles = () => {
         <Services />
         <Features />
         <Blog />
+        <Schedule />
         <Footer /> 
     </div>
   )

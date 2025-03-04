@@ -173,7 +173,10 @@
     letter-spacing: var(--e-global-typography-84ca66e-letter-spacing);
     word-spacing: var(--e-global-typography-84ca66e-word-spacing);
 }
-
+.elementor-kit-6 p{
+    line-height: var(--e-global-typography-84ca66e-line-height);
+    padding: 0px;
+}
 .elementor-kit-6 button,
 .elementor-kit-6 input[type="button"],
 .elementor-kit-6 input[type="submit"],
@@ -484,4 +487,5 @@ h1.entry-title {
     .e-con {
         --container-max-width: 767px;
     }
+    .
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import "./Features.css"; // Importing the external CSS file
 import image1 from '../About/banner11.jpg'
+import image2 from './anne-nygard-t0rMooxmZc0-unsplash.jpg'
+import image3 from "./anne-nygard-x07ELaNFt34-unsplash.jpg";
 const Features = () => {
   return (
     <div  className="features-container">
@@ -19,13 +21,17 @@ const Features = () => {
           </ul>
         </div>
         <div className="feature-image">
-          <img src={image1} alt="Quantitative Analysis Dashboard" />
+          <img src={image2} alt="Quantitative Analysis Dashboard" className="image-expert" />
         </div>
       </section>
         <section className="feature-section">
-            <h2>Why AlgoEdge Quant SaaS?</h2>
-            <ul>
-                <li><strong>Rapid Strategy Deployment:</strong> </li>
+        <div className="feature-image">
+          <img src={image3} alt="Quantitative Analysis Dashboard" className="image-expert"/>
+        </div>
+        <div className="feature-text">
+          <h2>Why Choose AlgoEdge Managed Funds?</h2>
+          <ul>
+          <li><strong>Rapid Strategy Deployment:</strong> </li>
                 <p>Start using high-performing quant-based strategies in as little as one day. Leverage our infrastructure to deploy strategies without delay.</p>
                 <li><strong>Cutting-Edge Infrastructure:</strong> </li>
                 <p>Our advanced technology stack, built for scalability and efficiency, includes real-time data processing and enhanced risk management systems. Designed to reduce operational overhead, our infrastructure is optimized to support low-latency, high-frequency trading.</p>
@@ -34,9 +40,10 @@ const Features = () => {
                 <p>Integrated, high-performance systems designed to maximize trading speed and reliability.</p>
                 <li><strong>Client-Centered Solutions:</strong> </li>
                 <p>Stay liquid with flexible lock-in terms based on your fund’s needs.</p>
-              <p>Transparent, tailored profit-sharing models</p>
-              <p>Low research fees for cost-effective access to cutting-edge quantitative research.</p>
+                <p>Transparent, tailored profit-sharing models</p>
+                <p>Low research fees for cost-effective access to cutting-edge quantitative research.</p>
             </ul>
+        </div>
         </section>
     </div>
   );
