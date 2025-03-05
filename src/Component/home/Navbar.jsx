@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import logo from "./Images/logo-icon.svg";
 import "./Navbar.css";
@@ -6,8 +6,8 @@ import "./Navbar.css";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  // Track whether we're on a mobile viewport (below 1030px)
   const [isMobile, setIsMobile] = useState(window.innerWidth < 1030);
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,9 +18,20 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  useEffect(() => {
+    // Close dropdown when clicking outside
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
   const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen);
 
-  // Close menu and dropdown only if we're on mobile
   const closeMenu = () => {
     if (isMobile) {
       setIsMenuOpen(false);
@@ -28,10 +39,16 @@ const Navbar = () => {
     }
   };
 
+  const dropdownStyle = {
+    maxHeight: isDropdownOpen ? "300px" : "0px",
+    opacity: isDropdownOpen ? 1 : 0,
+    overflow: "hidden",
+    transition: "max-height 0.7s ease-in-out, opacity 0.7s ease-in-out",
+  };
+
   return (
     <header className="navbar-header">
       <nav className="navbar-container">
-        {/* Logo Section */}
         <div className="navbar-logo">
           <Link to="/" className="logo-link" onClick={closeMenu}>
             <div className="logo-circle">
@@ -41,7 +58,6 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Hamburger Menu (Mobile) */}
         <div className="hamburger-menu">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -58,17 +74,12 @@ const Navbar = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d={
-                  isMenuOpen
-                    ? "M6 18L18 6M6 6l12 12"
-                    : "M4 6h16M4 12h16M4 18h16"
-                }
+                d={isMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
               />
             </svg>
           </button>
         </div>
 
-        {/* Menu Section */}
         <div className={`menu ${isMenuOpen ? "menu-open" : ""}`}>
           <ul className="menu-list">
             <li className="menu-item">
@@ -76,59 +87,42 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
-            <li className="menu-item dropdown">
+            <li className="menu-item dropdown" ref={dropdownRef}>
               <span
                 className="menu-link dropdown-toggle"
-                onClick={toggleDropdown}
+                onClick={() => {
+                  closeMenu();
+                  toggleDropdown();
+                }}
               >
                 Solutions
               </span>
-              {isDropdownOpen && (
-                <div className="dropdown-card">
-                  <Link
-                    to="/finles-service"
-                    className="menu-link-1"
-                    onClick={closeMenu}
-                  >
-                    <div className="dropdown-item">
-                      <h1>Expertly Managed Funds</h1>
-                      <p className="item-description">
-                        Hands-off investment approach <br /> through AlgoEdge’s
-                        trusted global <br /> partner funds.
-                      </p>
-                    </div>
-                  </Link>
-                  <Link
-                    to="/Qaas-service"
-                    className="menu-link-1"
-                    onClick={closeMenu}
-                  >
-                    <div className="dropdown-item">
-                      <h1>Quant Trading SaaS</h1>
-                      <p className="item-description">
-                        Empower your trading operations <br /> with AlgoEdge’s
-                        Quant SaaS without the need <br /> in-house team.
-                      </p>
-                    </div>
-                  </Link>
-                </div>
-              )}
+              <div className="dropdown-card" style={dropdownStyle}>
+                <Link to="/finles-service" className="menu-link-1" onClick={closeMenu}>
+                  <div className="dropdown-item">
+                    <h1>Expertly Managed Funds</h1>
+                    <p className="item-description">
+                      Hands-off investment approach <br /> through AlgoEdge’s trusted global <br /> partner funds.
+                    </p>
+                  </div>
+                </Link>
+                <Link to="/Qaas-service" className="menu-link-1" onClick={closeMenu}>
+                  <div className="dropdown-item">
+                    <h1>Quant Trading SaaS</h1>
+                    <p className="item-description">
+                      Empower your trading operations <br /> with AlgoEdge’s Quant SaaS without the need <br /> in-house team.
+                    </p>
+                  </div>
+                </Link>
+              </div>
             </li>
             <li className="menu-item">
-              <Link
-                to="/Investment-Products"
-                className="menu-link"
-                onClick={closeMenu}
-              >
+              <Link to="/Investment-Products" className="menu-link" onClick={closeMenu}>
                 Investment Products
               </Link>
             </li>
             <li className="menu-item">
-              <Link
-                to="/article-news"
-                className="menu-link"
-                onClick={closeMenu}
-              >
+              <Link to="/article-news" className="menu-link" onClick={closeMenu}>
                 Article & Insights
               </Link>
             </li>

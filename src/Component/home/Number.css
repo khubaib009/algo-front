@@ -40,7 +40,7 @@
 
 .numbers-text p {
   font-size: 16px;
-  color: #444;
+  color: white !important;
 }
 
 .numbers-box {
@@ -81,4 +81,7 @@ hr {
   .numbers-box {
     width: 100%;
   }
+}
+.para{
+  color: white!important;
 }

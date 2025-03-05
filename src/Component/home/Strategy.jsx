@@ -8,6 +8,7 @@ import layer2 from '../home/Images/Layer-2.svg';
 import vector6 from '../home/Images/Vector 6.svg';
 import polygon5 from '../home/Images/Polygon 5.svg';
 import './startegy.css';
+import { Link } from "react-router-dom";
 
 const Strategy = () => {
   return (
@@ -58,12 +59,14 @@ const Strategy = () => {
                       <img src={layer3} alt="layer-1" className="layer1" />
                       <div className="option left-option"> 
                         <h3 className="option-title-left">
-                          Invest Through Our Global Partners
+                          Expertly Managed Funds
                         </h3>
                         <p className="option-text-left">
                           For clients without infrastructure who prefer a fully managed solution.
                         </p>
-                        <button className="strategy-button-1">More</button>
+                        <Link to="/contact" className="menu-link" >
+                            <button className="strategy-button">More</button>
+                          </Link>
                       </div>
                     </div>
                     
@@ -75,12 +78,15 @@ const Strategy = () => {
                       <div className="option right-option">
 
                         <h3 className="option-title-right">
-                         License Our Strategies Via APIs
+                          Quant as a Service
                         </h3>
                         <p className="option-text-right">
                         For clients with their own infrastructure, receive real-time trading signals via APIs,and execute yourself.
                         </p>
-                        <button className="strategy-button">More</button>
+                         <Link to="/contact" className="menu-link" >
+                            <button className="strategy-button">More</button>
+                          </Link>
+                        
                       </div>
                       
                     </div>

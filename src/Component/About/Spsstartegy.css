@@ -1,6 +1,6 @@
 .card-section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3x3 grid layout */
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 20px;
   row-gap: 50px; 
@@ -9,19 +9,21 @@
   margin: 0 auto;
   margin-top: 10px;
 }
+
 @media (max-width: 1024px) {
   .card-section {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 50px;  /* 2x2 on medium screens */
+    row-gap: 50px;
   }
 }
 
 @media (max-width: 768px) {
   .card-section {
     grid-template-columns: repeat(1, 1fr);
-    row-gap: 50px;  /* Single column on small screens */
+    row-gap: 50px;
   }
 }
+
 .card {
   flex: 1;
   max-width: 320px;
@@ -44,7 +46,6 @@
 }
 
 .card-subtitle {
-  font-size: 24px;
   font-size: 42px !important;
   font-family: "Gayathri", sans-serif !important;
   font-weight: 700;
@@ -58,12 +59,17 @@
 }
 
 .card-description li {
-  
   font-size: 14px !important;
   margin-bottom: 8px;
   color: #555;
 }
 
+/* First box description black */
+.card:first-child .card-description li {
+  color: black !important;
+}
+
+/* Center all buttons horizontally */
 .card-button {
   background-color: white !important;
   color: black;
@@ -75,6 +81,8 @@
   width: 200px;
   color: #333 !important;
   transition: 0.3s ease-in-out;
+  display: block;
+
 }
 
 .card-button:hover {
