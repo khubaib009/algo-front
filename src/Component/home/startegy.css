@@ -123,7 +123,7 @@ justify-content: center;
   flex-direction: column;
   align-items: end;
   position: relative;
-  margin-top: 190px;
+  margin-top: 170px;
 }
 .image-layer-1 > img:nth-child(1) {
   margin-right: -40px;
@@ -131,7 +131,7 @@ justify-content: center;
 }
 .image-layer{
  position: relative;
- margin-top: 195px;
+ margin-top: 160px;
 }
 .image-layer > img:nth-child(1) {
   margin-left: -40px;
