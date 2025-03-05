@@ -71,7 +71,7 @@
   align-items: center;
   width: 100%;
   text-align: center;
-  border-radius: 8px;
+  /* border-radius: 8px; */
   overflow: hidden;
   background: inherit;
 }
@@ -95,7 +95,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px dashed #3B8F6E;
+  border: 2px solid white;
   background: transparent;
   color: white;
   font-size: 16px;
@@ -104,6 +104,7 @@
   transition: background 0.4s ease-in-out;
   flex-shrink: 0;
   gap: 5px;
+  border-radius: 0px!important;
 }
 @media (min-width: 768px) {
   .multiassets-card {

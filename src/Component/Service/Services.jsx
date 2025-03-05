@@ -1,11 +1,8 @@
 import React from "react";
 import "./Services.css";
-
+import { Link } from "react-router-dom";
 const Services = () => {
-  const scheduleMeeting = () => {
-    alert("Thank you for your interest! We will contact you soon to schedule a meeting.");
-  };
-
+ 
   return (
     <div className="container">
       <div className="service-container">
@@ -16,7 +13,9 @@ const Services = () => {
           signals through seamless API integration. Skip the complexities of developing strategies in-house and 
           focus on execution and performance enhancement with full control over your trading activities..
           </p>
-          <button onClick={scheduleMeeting}>Schedule a meeting</button>
+          <Link to="/contact" className="menu-link" >
+            <button>Schedule a meeting</button>
+          </Link>
         </div>
       </div>
     </div>

@@ -100,7 +100,9 @@
 .menu-item.dropdown {
   position: relative;
 }
-
+.dropdown-toggle {
+ cursor: pointer;
+}
 .menu-link {
   font-family: "Radio Canada Big", sans-serif;
   font-size: 16px;
@@ -138,6 +140,8 @@
   grid-template-columns: 1fr;
   gap: 10px;
   margin-top: 10px;
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out, visibility 0.9s!important;
+
 }
 
 .dropdown-item {
@@ -145,11 +149,15 @@
   background: white;
   border: 1px solid #ddd;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.4s ease-in-out;
+
 }
 
 .dropdown-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease-in-out;
+
 }
 
 .dropdown-item > h1 {
@@ -159,6 +167,8 @@
   font-size: 24px !important;
   width: 100%;
   margin: 0;
+  transition: transform 0.4s ease-in-out;
+
 }
 
 .item-description {
@@ -213,7 +223,10 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     z-index: 999;
+    transition: transform 0.4s ease-in-out;
+
   }
+
 
   .dropdown-item {
     padding: 20px;

@@ -1,13 +1,14 @@
 .cta-container {
   width: 87%;
   margin: 0 auto;
-  
+  background-color: #F4FFFB;
   color: white;
   text-align: center;
   padding: 60px 15px;
   border-radius: 15px;
   position: relative;
   overflow: hidden;
+  margin-top: 80px;
   margin-bottom: 60px;
 }
 
