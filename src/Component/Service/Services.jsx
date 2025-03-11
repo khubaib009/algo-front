@@ -11,7 +11,7 @@ const Services = () => {
           <p>
           Empower your trading operations with AlgoEdge’s Quant SaaS. Receive real-time, algorithmic trading 
           signals through seamless API integration. Skip the complexities of developing strategies in-house and 
-          focus on execution and performance enhancement with full control over your trading activities..
+          focus on execution and performance enhancement with full control over your trading activities.
           </p>
           <Link to="/contact" className="menu-link" >
             <button>Schedule a meeting</button>

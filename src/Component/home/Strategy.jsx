@@ -64,7 +64,7 @@ const Strategy = () => {
                         <p className="option-text-left">
                           For clients without infrastructure who prefer a fully managed solution.
                         </p>
-                        <Link to="/contact" className="menu-link" >
+                        <Link to="/finles-service" className="menu-link" >
                             <button className="strategy-button">More</button>
                           </Link>
                       </div>
@@ -83,7 +83,7 @@ const Strategy = () => {
                         <p className="option-text-right">
                         For clients with their own infrastructure, receive real-time trading signals via APIs,and execute yourself.
                         </p>
-                         <Link to="/contact" className="menu-link" >
+                         <Link to="/Qaas-service" className="menu-link" >
                             <button className="strategy-button">More</button>
                           </Link>
                         

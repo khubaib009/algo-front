@@ -1,19 +1,63 @@
-.trusted-by-container{
+.trusted-by-container {
   width: 87%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .trusted-by-title {
-  text-align: center;
   font-family: "Gayathri", sans-serif !important;
   font-weight: 700;
   color: #000;
-  text-align: center;
   font-size: 54px !important;
   line-height: 90.33px;
   width: 100%;
   margin: 0;
 }
-.trusted-by-logos{
-  
+
+.trusted-by-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.trusted-logo {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Responsive adjustments for tablets */
+@media (max-width: 768px) {
+  .trusted-by-title {
+    font-size: 36px !important;
+    line-height: 60px;
+  }
+
+  .trusted-by-logos {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 15px;
+  }
+
+  .trusted-logo {
+    max-width: 80px;
+  }
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 480px) {
+  .trusted-by-title {
+    font-size: 28px !important;
+    line-height: 40px;
+  }
+
+  .trusted-by-logos {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .trusted-logo {
+    max-width: 60px;
+  }
 }

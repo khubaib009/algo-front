@@ -38,7 +38,7 @@ const Footer = () => {
               <Link to="/finles-service" className="menu-link">
               <li> Expertly Managed Funds</li>
                 </Link>
-                <Link to="/finles-service" className="menu-link">
+                <Link to="/Qaas-service" className="menu-link">
                 <li>Quant Trading SaaS</li>
                 </Link>
               </ul>

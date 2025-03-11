@@ -91,17 +91,6 @@ const legals = [
       instagram: '#'
     }
   },
-  
-  {
-    name: 'Sahil',
-    role: 'Director - APAC',
-    img: Sahil,
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      instagram: '#'
-    }
-  },
  
 ];
 

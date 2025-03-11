@@ -20,7 +20,7 @@ const AlgoEdgeNumbers = () => {
             <h2>01</h2>
             <h2>|</h2>
           </div >
-          <p className="para" style={{color:"white"}}>Verified Performance of 50%+ Annual Returns.</p>
+          <p className="para" style={{color:"white"}}>Strategies trained on over 500 terabytes of historical market data, ensuring deep market insight.</p>
         </div>
         <hr />
         <div className="numbers-item">
@@ -29,8 +29,7 @@ const AlgoEdgeNumbers = () => {
             <h2>|</h2>
           </div>
           <p className="para" style={{color:"white"}}>
-          Data from Over 20,000 active Traders and
-          Algorithms.
+          Executed over 10 million trades across global markets, refining edge through real-world performance.
           </p>
         </div>
         <hr />
@@ -40,8 +39,7 @@ const AlgoEdgeNumbers = () => {
             <h2>|</h2>
           </div>
           <p className="para" style={{color:"white"}}>
-          Data from Over 20,000 active Traders and
-          Algorithms.
+            Backtested against 10+ years of historical market data, stress-testing strategies in all conditions.
           </p>
         </div>
       </div>

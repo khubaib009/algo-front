@@ -1,5 +1,6 @@
 import React from "react";
 import "./Spsstartegy.css";
+import { Link } from "react-router-dom";
 const CardSection = () => {
   const cards = [
     {
@@ -64,7 +65,9 @@ const CardSection = () => {
               <li key={idx}>{desc}</li>
             ))}
           </ul>
-          <button className="card-button">Learn More</button>
+          <Link to="/contact" className="menu-link">
+           <button className="card-button">Learn More</button>
+          </Link>
         </div>
       ))}
     </div>

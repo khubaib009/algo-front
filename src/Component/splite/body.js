@@ -19,7 +19,7 @@ const Body = () => {
       
       <Header />
       {/* <About /> */}
-      {/* <Logo /> */}
+      <Logo />
       {/* <Performance /> */}
       <Startegy />
       <Number />
