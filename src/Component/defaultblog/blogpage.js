@@ -5,6 +5,7 @@ import  './blogpage.css'
 import { Link } from "react-router-dom";
 import Schedule from '../home/Schedule'
 import backtest from './and-machines-2yClsTFXIcE-unsplash.jpg'
+import diversy from './Diversy-3.jpeg'
 const Blogpage = () => {
   const isMobile = window.innerWidth < 600;
 
@@ -170,6 +171,42 @@ option on the same underlying asset with the same expiration date and strike pri
                       <div className="elementor-post__meta-data">
                         <span className="elementor-post-date">
                         May 03, 2024                   
+                      </span>
+                      </div>
+                    </div>
+                  </article>
+                  <article className="elementor-post elementor-grid-item post-123 post type-post status-publish format-standard has-post-thumbnail hentry category-investment"style={{width:isMobile?'100%':'30%'}}>
+                    <div className="elementor-post__card">
+                      <a className="elementor-post__thumbnail__link" onClick={() =>{window.location.href='/Backtesting'}} tabIndex={-1} >
+                        <div className="elementor-post__thumbnail">
+                          <img
+                            style={{ height: '250px' }}
+                            fetchpriority="high"
+                            width={1280}
+                            height={750}
+                            src={diversy}
+                            className="attachment-full size-full wp-image-118"
+                            alt="Business people, coach and stock market presentation in meeting for trading, graph and chart monito"
+                            decoding="async"
+                            sizes="(max-width: 1280px) 100vw, 1280px"
+                          />
+                        </div>
+                      </a>
+                      {/* <div className="elementor-post__badge">{list.blog_category}</div> */}
+                      <div className="elementor-post__text">
+                        <div className="elementor-post__title">
+                          <a onClick={() =>{window.location.href='/diversify'}} >
+                            What is the best way to diversify?
+                          </a>
+                        </div>
+                        <div className="elementor-post__excerpt">
+                          <p>
+                          Diversification is the key to managing investment risk and improving long-term returns. It ensures that no single asset, sector, or region dominates a portfolio, reducing exposure to market downturns                          </p>
+                        </div>
+                      </div>
+                      <div className="elementor-post__meta-data">
+                        <span className="elementor-post-date">
+                        March 13, 2025                   
                       </span>
                       </div>
                     </div>

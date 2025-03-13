@@ -19,6 +19,7 @@ const SingleBlog = React.lazy(()=> import('./Component/blog/singleblog/singleblo
 const Blogone = React.lazy(()=> import('./Component/defaultblog/blogone'))
 const Blogtwo = React.lazy(()=> import('./Component/defaultblog/blogtwo'))
 const Blogthree = React.lazy(()=> import('./Component/defaultblog/blogthree'))
+const BlogFour = React.lazy(()=> import('./Component/defaultblog/blogfour'))
 const DefaultBlog = React.lazy(()=> import('./Component/defaultblog/blogpage'))
 const B2c = React.lazy(()=> import('./Component/splite/Ouroffering/B2c'))
 const B2b = React.lazy(()=> import('./Component/splite/Ouroffering/B2b'))
@@ -91,6 +92,8 @@ const App = () => {
                             element={<DefaultBlog />} />
                                <Route path="/Backtesting"
                             element={<Blogtwo />} />
+                            <Route path="/diversify"
+                            element={<BlogFour />} />
                              <Route path="/qaas-service"
                               element={<Qaas />} />
                               <Route path="/finles-service"

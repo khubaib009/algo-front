@@ -18,6 +18,7 @@ import Muzammin from '../home/Images/MUAZZIM.JPG'
 import Damien from '../home/Images/Damien.jpeg'
 import Evren from '../home/Images/Evren.jpeg'
 import Aboutus from '../home/Aboutus'
+import jeane from './WhatsApp Image 2025-03-12 at 6.54.30 PM (1).jpeg'
 const founder = {
   name: 'Kunal Dhawan',
   role: 'CEO & Founder',
@@ -35,7 +36,7 @@ const teamMembers = [
 
   {
     name: 'Abhishek Singh',
-    role: 'Crypto Lead',
+    role: 'Senior Quantitative Researcher',
     img: Abishek,
     social: {
       linkedin: '#',
@@ -45,7 +46,7 @@ const teamMembers = [
   },
   {
     name: 'Viney Dhankhar',
-    role: 'Index Derivatives Lead',
+    role: 'Senior Quantitative Researcher',
     img: viney,
     social: {
       linkedin: '#',
@@ -55,7 +56,7 @@ const teamMembers = [
   },
   {
     name: 'Satvik Gupta',
-    role: 'Commodities Lead',
+    role: 'Quantitative Researcher',
     img: satvik,
     social: {
       linkedin: '#',
@@ -68,11 +69,21 @@ const teamMembers = [
 ];
 
 const legals = [
+  {
+    name: 'Jean-Luc Choufani',
+    role: 'Director, Business Development',
+    img: jeane,
+    social: {
+      linkedin: '#',
+      twitter: '#',
+      instagram: '#'
+    }
+  },
  
   // Duplicate for demonstration; ideally, you'd map over different data
   {
     name: 'Shashank Roheria',
-    role: 'Legal Principal',
+    role: ' Legal Officer',
     img: shashank,
     social: {
       linkedin: '#',
@@ -81,16 +92,7 @@ const legals = [
     }
   },
  
-  {
-    name: 'Jean-Luc Choufani',
-    role: 'Director - Americas',
-    img: jean,
-    social: {
-      linkedin: '#',
-      twitter: '#',
-      instagram: '#'
-    }
-  },
+ 
  
 ];
 
@@ -100,6 +102,7 @@ const Advisory= [
   // Duplicate for demonstration; ideally, you'd map over different data
   {
     name: 'Damien Iggiotti',
+    role: ' Advisor',
     img: Damien,
     social: {
       linkedin: '#',
@@ -109,6 +112,7 @@ const Advisory= [
   },
   {
     name: 'Evren Cubukgil',
+    role: ' Advisor',
     img: Evren,
     social: {
       linkedin: '#',
